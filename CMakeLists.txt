@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.14)
-project(os192Assignment3 C)
+project(os192_Assignment3 C)
 
 set(CMAKE_C_STANDARD 11)
 
 include_directories(.)
 
-add_executable(os192Assignment3
+add_executable(os192_Assignment3
         asm.h
         bio.c
         bootmain.c

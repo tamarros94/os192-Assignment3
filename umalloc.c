@@ -26,7 +26,6 @@ pmalloc() {
     if (!head)
         init_list();
 
-
     struct p_node *curr = head;
 
     while (1) {
@@ -45,20 +44,16 @@ pmalloc() {
 
     curr->free = 0;
 
-    // TODO: set_flags
-
-//    // try to set flags!
-//    if (!set_flags(curr->va, PTE_PM & PTE_P & PTE_U & PTE_W, 0)) {
-//        // If failed, mark as free and turn off PRESENT flag
-//        curr->used = 0;
-//        set_flags(curr->va, ~PTE_P, 1);
-//        return 0;
-//    }
-
+    if(set_flag(curr->va, PTE_1|PTE_P|PTE_U|PTE_W,1)){
+        set_flag(curr->va,~PTE_P,0);
+        curr->free = 1;
+        return 0;
+    }
     return (void *) curr->va;
 }
 
 int protect_page(void *ap) {
+    int ret = -1;
     struct p_node *curr = head;
     int found_node = 0;
     while (curr != 0) {
@@ -70,11 +65,30 @@ int protect_page(void *ap) {
     }
     if (!found_node) return -1;
 
-    // if flag is set as allocated with PMALLOC, protect the page
-    if ((get_flags((uint) ap) & PTE_1)) {
-        return set_flags((uint) ap, ~PTE_W, 1);
+    if ((get_flags((uint) ap))&PTE_1) {
+        ret = set_flag((uint) ap, PTE_W, 0);
     }
-    return -1;
+    return ret;
+}
+
+int pfree(void* ap){
+    struct p_node* curr = head;
+    int found_node = 0;
+    while (curr != 0) {
+        if (curr->va == (uint) ap) {
+            found_node = 1;
+            break;
+        }
+        curr = curr->next;
+    }
+    if (!found_node) return -1;
+    int flags = get_flags((uint)ap);
+    if((!(flags & PTE_1)) || flags&PTE_W){
+        return -1;
+    }
+    // Set internal linkedlist node to free
+    curr->free = 1;
+    return 1;
 }
 
 void init_list() {
