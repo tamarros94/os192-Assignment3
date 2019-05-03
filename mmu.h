@@ -227,3 +227,6 @@ struct gatedesc {
 }
 
 #endif
+
+#define MAX_PYSC_PAGES 16
+#define MAX_TOTAL_PAGES 32

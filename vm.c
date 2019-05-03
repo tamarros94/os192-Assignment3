@@ -208,6 +208,26 @@ loaduvm(pde_t *pgdir, char *addr, struct inode *ip, uint offset, uint sz) {
     return 0;
 }
 
+
+int get_ram_idx() {
+    if (myproc() == 0)
+        return -1;
+    int i;
+    for (i = 0; i < MAX_PYSC_PAGES; i++) {
+        if (myproc()->ram_monitor[i].used == 0)
+            return i;
+    }
+    return -1; //NO ROOM IN RAMCTRLR
+}
+
+void add2ram(pde_t *pgdir, uint p_va) {
+    int idx = get_ram_idx();
+    myproc()->ram_monitor[idx].used = 1;
+    myproc()->ram_monitor[idx].pgdir = pgdir;
+    myproc()->ram_monitor[idx].p_va = p_va;
+}
+
+
 // Allocate page tables and physical memory to grow process from oldsz to
 // newsz, which need not be page aligned.  Returns new size or 0 on error.
 int
@@ -229,11 +249,12 @@ allocuvm(pde_t *pgdir, uint oldsz, uint newsz) {
             return 0;
         }
         memset(mem, 0, PGSIZE);
-        if (mappages(pgdir, (char *) a, PGSIZE, V2P(mem), PTE_W | PTE_U) < 0) {
-            cprintf("allocuvm out of memory (2)\n");
-            deallocuvm(pgdir, newsz, oldsz);
-            kfree(mem);
-            return 0;
+        (mappages(pgdir, (char *) a, PGSIZE, V2P(mem), PTE_W | PTE_U) < 0);
+        if (myproc()->pid > 2){
+            if ((PGROUNDUP(oldsz)+1)/PGSIZE > MAX_PYSC_PAGES)
+                swap(pgdir, a);
+            else //there's room
+                add2ram(pgdir, a);
         }
     }
     return newsz;

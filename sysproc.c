@@ -96,3 +96,21 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+
+
+int
+sys_set_flag(void){
+    int va, flag, on;
+    if(argint(0,&va) < 0 || argint(1,&flag) < 0 || argint(2,&on) < 0)
+        return -1;
+
+    return set_flag(va,flag,on);
+}
+
+int sys_get_flags(void){
+    int va;
+    if(argint(0,&va) < 0 )
+        return -1;
+
+    return get_flags(va);
+}
