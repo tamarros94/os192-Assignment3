@@ -209,6 +209,50 @@ loaduvm(pde_t *pgdir, char *addr, struct inode *ip, uint offset, uint sz) {
 }
 
 
+int get_swap_idx() {
+    for (int i = 0; i < MAX_TOTAL_PAGES - MAX_PYSC_PAGES; ++i) {
+        if (myproc()->swap_monitor[i].used == 0) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+int write2file(int ram_idx) {
+    int swap_idx = get_swap_idx();
+    struct proc *p = myproc();
+    int success;
+    if (success = writeToSwapFile(p, p->ram_monitor[ram_idx].p_va, PGSIZE * swap_idx, PGSIZE) < 0) return -1;
+
+    p->swap_monitor[swap_idx].pgdir = p->ram_monitor[ram_idx].pgdir;
+    p->swap_monitor[swap_idx].p_va = p->ram_monitor[ram_idx].p_va;
+    p->swap_monitor[swap_idx].used = 1;
+
+    return success;
+}
+
+int get_ram_idx() {
+    for (int i = 0; i < MAX_PYSC_PAGES; ++i) {
+        if (myproc()->ram_monitor[i].used == 1)
+            return i;
+    }
+    return -1;
+}
+
+void swap(pde_t *pgdir, uint p_va) {
+    struct proc *p = myproc();
+    p->pages_in_file++;
+    int ram_idx = get_ram_idx();
+    pte_t *pte = walkpgdir(pgdir, (int *) p_va, 0);
+    int p_pa = PTE_ADDR(*pte);
+    write2file(ram_idx);
+    kfree(P2V(p_pa));
+    p->ram_monitor[ram_idx].used = 0;
+    set_flag(p->ram_monitor[ram_idx].p_va,PTE_PG,1);
+    set_flag(p->ram_monitor[ram_idx].p_va,PTE_P,0);
+    addToRamCtrlr(pgdir, userPageVAddr);
+}
+
 int get_ram_idx() {
     if (myproc() == 0)
         return -1;
@@ -250,8 +294,8 @@ allocuvm(pde_t *pgdir, uint oldsz, uint newsz) {
         }
         memset(mem, 0, PGSIZE);
         (mappages(pgdir, (char *) a, PGSIZE, V2P(mem), PTE_W | PTE_U) < 0);
-        if (myproc()->pid > 2){
-            if ((PGROUNDUP(oldsz)+1)/PGSIZE > MAX_PYSC_PAGES)
+        if (myproc()->pid > 2) {
+            if ((PGROUNDUP(oldsz) + 1) / PGSIZE > MAX_PYSC_PAGES)
                 swap(pgdir, a);
             else //there's room
                 add2ram(pgdir, a);
@@ -405,7 +449,7 @@ set_flag(uint va, int flag, int on) {
     if (!on) {
         *pte = *pte & (~flag);
     }
-    // turn flag bit on
+        // turn flag bit on
     else {
         *pte = *pte | flag;
     }

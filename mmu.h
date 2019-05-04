@@ -141,6 +141,7 @@ struct segdesc {
 #define PTE_D           0x040   // Dirty
 #define PTE_PS          0x080   // Page Size
 #define PTE_MBZ         0x180   // Bits must be zero
+#define PTE_PG          0x200   // Page in disk - Task 2
 #define PTE_1           0x400   // Created by pmalloc - Task 1
 
 // Address in page table or page directory entry

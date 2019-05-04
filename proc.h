@@ -56,6 +56,7 @@ struct proc {
     struct file *swapFile;      //page file
     struct p_monitor ram_monitor[MAX_PYSC_PAGES];
     struct p_monitor swap_monitor[MAX_TOTAL_PAGES - MAX_PYSC_PAGES];
+    int pages_in_file;
 };
 
 // Process memory is laid out contiguously, low addresses first:
