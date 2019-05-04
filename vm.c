@@ -232,28 +232,6 @@ int write2file(int ram_idx) {
 }
 
 int get_ram_idx() {
-    for (int i = 0; i < MAX_PYSC_PAGES; ++i) {
-        if (myproc()->ram_monitor[i].used == 1)
-            return i;
-    }
-    return -1;
-}
-
-void swap(pde_t *pgdir, uint p_va) {
-    struct proc *p = myproc();
-    p->pages_in_file++;
-    int ram_idx = get_ram_idx();
-    pte_t *pte = walkpgdir(pgdir, (int *) p_va, 0);
-    int p_pa = PTE_ADDR(*pte);
-    write2file(ram_idx);
-    kfree(P2V(p_pa));
-    p->ram_monitor[ram_idx].used = 0;
-    set_flag(p->ram_monitor[ram_idx].p_va,PTE_PG,1);
-    set_flag(p->ram_monitor[ram_idx].p_va,PTE_P,0);
-    addToRamCtrlr(pgdir, userPageVAddr);
-}
-
-int get_ram_idx() {
     if (myproc() == 0)
         return -1;
     int i;
@@ -270,6 +248,33 @@ void add2ram(pde_t *pgdir, uint p_va) {
     myproc()->ram_monitor[idx].pgdir = pgdir;
     myproc()->ram_monitor[idx].p_va = p_va;
 }
+
+
+int get_used_ram_idx() {
+    if (myproc() == 0)
+        return -1;
+    int i;
+    for (i = 0; i < MAX_PYSC_PAGES; i++) {
+        if (myproc()->ram_monitor[i].used == 1)
+            return i;
+    }
+    return -1; //NO ROOM IN RAMCTRLR
+}
+
+void swap(pde_t *pgdir, uint p_va) {
+    struct proc *p = myproc();
+    p->pages_in_file++;
+    int ram_idx = get_used_ram_idx();
+    pte_t *pte = walkpgdir(pgdir, (int *) p_va, 0);
+    int p_pa = PTE_ADDR(*pte);
+    write2file(ram_idx);
+    kfree(P2V(p_pa));
+    p->ram_monitor[ram_idx].used = 0;
+    set_flag(p->ram_monitor[ram_idx].p_va, PTE_PG, 1);
+    set_flag(p->ram_monitor[ram_idx].p_va, PTE_P, 0);
+    add2ram(pgdir, p_va);
+}
+
 
 
 // Allocate page tables and physical memory to grow process from oldsz to
@@ -295,10 +300,11 @@ allocuvm(pde_t *pgdir, uint oldsz, uint newsz) {
         memset(mem, 0, PGSIZE);
         (mappages(pgdir, (char *) a, PGSIZE, V2P(mem), PTE_W | PTE_U) < 0);
         if (myproc()->pid > 2) {
-            if ((PGROUNDUP(oldsz) + 1) / PGSIZE > MAX_PYSC_PAGES)
-                swap(pgdir, a);
-            else //there's room
+            if ((PGROUNDUP(oldsz) + 1) / PGSIZE <= MAX_PYSC_PAGES)
                 add2ram(pgdir, a);
+
+            else swap(pgdir, a);
+
         }
     }
     return newsz;
@@ -457,4 +463,35 @@ set_flag(uint va, int flag, int on) {
     lcr3(V2P(myproc()->pgdir));
 
     return 0;
+}
+
+static char buff[PGSIZE]; //buffer used to store swapped page in getPageFromFile method
+
+int page_from_disk(int va){
+    struct proc *p = myproc();
+    int p_va = PGROUNDDOWN(va);
+    char * np = kalloc();
+    memset(np, 0, PGSIZE);
+    int idx = get_ram_idx();
+    if (idx >= 0) {
+        set_flag(p_va,PTE_PG,0)
+        set_flag(p_va,PTE_P | PTE_W | PTE_U,1)
+        set_flag(p_va,np,1)
+
+
+        return 1; //Operation was successful
+    }
+    proc->countOfPagedOut++;
+    //If reached here - Swapping is needed.
+    outIndex = getPageOutIndex(); //select a page to swap to file
+    struct pagecontroller outPage = proc->ramCtrlr[outIndex];
+    fixPagedInPTE(userPageVAddr, v2p(np), proc->pgdir);
+    readPageFromFile(proc, outIndex, userPageVAddr, buff); //automatically adds to ramctrlr
+    int outPagePAddr = getPagePAddr(outPage.userPageVAddr, outPage.pgdir);
+    memmove(np, buff, PGSIZE);
+    writePageToFile(proc, outPage.userPageVAddr, outPage.pgdir);
+    fixPagedOutPTE(outPage.userPageVAddr, outPage.pgdir);
+    char *v = p2v(outPagePAddr);
+    kfree(v); //free swapped page
+    return 1;
 }
