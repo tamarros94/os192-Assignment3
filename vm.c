@@ -467,6 +467,21 @@ set_flag(uint va, int flag, int on) {
 
 static char buff[PGSIZE]; //buffer used to store swapped page in getPageFromFile method
 
+int read_page_from_disk(struct proc * p, int ram_idx, int p_va) {
+    int maxStructCount = (MAX_TOTAL_PAGES - MAX_PYSC_PAGES);
+    int i;
+    int ret;
+    for (i = 0; i < maxStructCount; i++) {
+        if (p->swap_monitor[i].p_va == p_va) {;
+            if(readFromSwapFile(p, buff, i*PGSIZE, PGSIZE) < 0) break;
+            p->ram_monitor[ram_idx] = p->swap_monitor[i];
+            p->swap_monitor[i].used = 0;
+            memmove((void*)p_va,buff,PGSIZE)
+        }
+    }
+    return -1;
+}
+
 int page_from_disk(int va){
     struct proc *p = myproc();
     int p_va = PGROUNDDOWN(va);
@@ -474,24 +489,28 @@ int page_from_disk(int va){
     memset(np, 0, PGSIZE);
     int idx = get_ram_idx();
     if (idx >= 0) {
-        set_flag(p_va,PTE_PG,0)
-        set_flag(p_va,PTE_P | PTE_W | PTE_U,1)
-        set_flag(p_va,np,1)
-
-
-        return 1; //Operation was successful
+        set_flag(p_va,PTE_PG,0);
+        set_flag(p_va,PTE_P | PTE_W | PTE_U,1);
+        set_flag(p_va,np,1);
+        read_page_from_disk(p, idx, p_va);
+        return 1;
     }
-    proc->countOfPagedOut++;
-    //If reached here - Swapping is needed.
-    outIndex = getPageOutIndex(); //select a page to swap to file
-    struct pagecontroller outPage = proc->ramCtrlr[outIndex];
-    fixPagedInPTE(userPageVAddr, v2p(np), proc->pgdir);
-    readPageFromFile(proc, outIndex, userPageVAddr, buff); //automatically adds to ramctrlr
-    int outPagePAddr = getPagePAddr(outPage.userPageVAddr, outPage.pgdir);
+    p->pages_in_file++;
+    int ram_idx = get_used_ram_idx();
+    struct p_monitor page = p->ram_monitor[ram_idx];
+    set_flag(p_va,PTE_PG,0)
+    set_flag(p_va,PTE_P | PTE_W | PTE_U,1)
+    set_flag(p_va,np,1);
+    read_page_from_disk(p, ram_idx, p_va);
+    pte_t *pte = walkpgdir(p->pgdir, (int*)p_va, 0);
+    if(!pte)
+        return -1;
+    int va1 = PTE_ADDR(*pte);
     memmove(np, buff, PGSIZE);
-    writePageToFile(proc, outPage.userPageVAddr, outPage.pgdir);
-    fixPagedOutPTE(outPage.userPageVAddr, outPage.pgdir);
-    char *v = p2v(outPagePAddr);
-    kfree(v); //free swapped page
+    write2file(ram_idx);
+    set_flag(page.p_va,PTE_PG,1);
+    set_flag(page.p_va,PTE_P,0);
+    char *v = P2V(va1);
+    kfree(v);
     return 1;
 }
