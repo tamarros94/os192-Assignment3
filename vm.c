@@ -221,8 +221,8 @@ int get_swap_idx() {
 int write2file(int ram_idx) {
     int swap_idx = get_swap_idx();
     struct proc *p = myproc();
-    int success;
-    if (success = writeToSwapFile(p, p->ram_monitor[ram_idx].p_va, PGSIZE * swap_idx, PGSIZE) < 0) return -1;
+    int success = writeToSwapFile(p, (char *)p->ram_monitor[ram_idx].p_va, PGSIZE * swap_idx, PGSIZE);
+    if (success < 0) return -1;
 
     p->swap_monitor[swap_idx].pgdir = p->ram_monitor[ram_idx].pgdir;
     p->swap_monitor[swap_idx].p_va = p->ram_monitor[ram_idx].p_va;
@@ -231,7 +231,7 @@ int write2file(int ram_idx) {
     return success;
 }
 
-int get_ram_idx() {
+int get_free_ram_idx() {
     if (myproc() == 0)
         return -1;
     int i;
@@ -243,7 +243,7 @@ int get_ram_idx() {
 }
 
 void add2ram(pde_t *pgdir, uint p_va) {
-    int idx = get_ram_idx();
+    int idx = get_free_ram_idx();
     myproc()->ram_monitor[idx].used = 1;
     myproc()->ram_monitor[idx].pgdir = pgdir;
     myproc()->ram_monitor[idx].p_va = p_va;
@@ -298,7 +298,7 @@ allocuvm(pde_t *pgdir, uint oldsz, uint newsz) {
             return 0;
         }
         memset(mem, 0, PGSIZE);
-        (mappages(pgdir, (char *) a, PGSIZE, V2P(mem), PTE_W | PTE_U) < 0);
+        mappages(pgdir, (char *) a, PGSIZE, V2P(mem), PTE_W | PTE_U);
         if (myproc()->pid > 2) {
             if ((PGROUNDUP(oldsz) + 1) / PGSIZE <= MAX_PYSC_PAGES)
                 add2ram(pgdir, a);
@@ -467,16 +467,13 @@ set_flag(uint va, int flag, int on) {
 
 static char buff[PGSIZE]; //buffer used to store swapped page in getPageFromFile method
 
-int read_page_from_disk(struct proc * p, int ram_idx, int p_va) {
-    int maxStructCount = (MAX_TOTAL_PAGES - MAX_PYSC_PAGES);
-    int i;
-    int ret;
-    for (i = 0; i < maxStructCount; i++) {
-        if (p->swap_monitor[i].p_va == p_va) {;
+int read_page_from_disk(struct proc * p, int free_ram_idx, int p_va) {
+    for (int i = 0; i < MAX_TOTAL_PAGES - MAX_PYSC_PAGES; i++) {
+        if (p->swap_monitor[i].p_va == p_va) {
             if(readFromSwapFile(p, buff, i*PGSIZE, PGSIZE) < 0) break;
-            p->ram_monitor[ram_idx] = p->swap_monitor[i];
+            p->ram_monitor[free_ram_idx] = p->swap_monitor[i];
             p->swap_monitor[i].used = 0;
-            memmove((void*)p_va,buff,PGSIZE)
+            memmove((void*)p_va,buff,PGSIZE);
         }
     }
     return -1;
@@ -487,12 +484,12 @@ int page_from_disk(int va){
     int p_va = PGROUNDDOWN(va);
     char * np = kalloc();
     memset(np, 0, PGSIZE);
-    int idx = get_ram_idx();
-    if (idx >= 0) {
+    int free_ram_idx = get_free_ram_idx();
+    if (free_ram_idx >= 0) {
         set_flag(p_va,PTE_PG,0);
         set_flag(p_va,PTE_P | PTE_W | PTE_U,1);
-        set_flag(p_va,np,1);
-        read_page_from_disk(p, idx, p_va);
+        set_flag(p_va, (int) np, 1);
+        read_page_from_disk(p, free_ram_idx, p_va);
         return 1;
     }
     p->pages_in_file++;

@@ -32,6 +32,14 @@ struct context {
     uint eip;
 };
 
+
+struct p_monitor {
+    int used;
+    pde_t *pgdir;
+    uint p_va;
+    uint placeOnFile;
+};
+
 enum procstate {
     UNUSED, EMBRYO, SLEEPING, RUNNABLE, RUNNING, ZOMBIE
 };
@@ -64,10 +72,3 @@ struct proc {
 //   original data and bss
 //   fixed-size stack
 //   expandable heap
-
-struct p_monitor {
-    int used;
-    pde_t *pgdir;
-    uint p_va;
-    uint placeOnFile;
-};

@@ -41,6 +41,7 @@ trap(struct trapframe *tf) {
             exit();
         return;
     }
+    uint va;
 
     switch (tf->trapno) {
         case T_IRQ0 + IRQ_TIMER:
@@ -74,14 +75,12 @@ trap(struct trapframe *tf) {
             lapiceoi();
             break;
 
-            uint va;
         case T_PGFLT:
             va = rcr2();
             if (myproc() != 0 && (get_flags(va) & PTE_PG)) {
-                if (page_from_disk(va)) {
-                    break;
-                }
+                (page_from_disk(va));
             }
+            break;
             //PAGEBREAK: 13
         default:
             if (myproc() == 0 || (tf->cs & 3) == 0) {
