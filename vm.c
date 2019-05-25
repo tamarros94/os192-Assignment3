@@ -221,7 +221,7 @@ int get_swap_idx() {
 int write2file(int ram_idx) {
     int swap_idx = get_swap_idx();
     struct proc *p = myproc();
-    int success = writeToSwapFile(p, (char *)p->ram_monitor[ram_idx].p_va, PGSIZE * swap_idx, PGSIZE);
+    int success = writeToSwapFile(p, (char *) p->ram_monitor[ram_idx].p_va, PGSIZE * swap_idx, PGSIZE);
     if (success < 0) return -1;
 
     p->swap_monitor[swap_idx].pgdir = p->ram_monitor[ram_idx].pgdir;
@@ -274,7 +274,6 @@ void swap(pde_t *pgdir, uint p_va) {
     set_flag(p->ram_monitor[ram_idx].p_va, PTE_P, 0);
     add2ram(pgdir, p_va);
 }
-
 
 
 // Allocate page tables and physical memory to grow process from oldsz to
@@ -333,6 +332,10 @@ deallocuvm(pde_t *pgdir, uint oldsz, uint newsz) {
                 panic("kfree");
             char *v = P2V(pa);
             kfree(v);
+            for (int i = 0; i < MAX_PYSC_PAGES; i++) {
+                if (myproc()->ram_monitor[i].p_va == a && myproc()->ram_monitor[i].pgdir == pgdir )
+                    myproc()->ram_monitor[i].used = 0;
+            }
             *pte = 0;
         }
     }
@@ -385,6 +388,12 @@ copyuvm(pde_t *pgdir, uint sz) {
             panic("copyuvm: pte should exist");
         if (!(*pte & PTE_P))
             panic("copyuvm: page not present");
+        if (*pte & PTE_PG){
+            set_flag(i,PTE_PG,1);
+            set_flag(i,PTE_P,0);
+            set_flag(i,~PTE_FLAGS(pte),0);
+            continue;
+        }
         pa = PTE_ADDR(*pte);
         flags = PTE_FLAGS(*pte);
         if ((mem = kalloc()) == 0)
@@ -467,27 +476,27 @@ set_flag(uint va, int flag, int on) {
 
 static char buff[PGSIZE]; //buffer used to store swapped page in getPageFromFile method
 
-int read_page_from_disk(struct proc * p, int free_ram_idx, int p_va) {
+int read_page_from_disk(struct proc *p, int free_ram_idx, int p_va) {
     for (int i = 0; i < MAX_TOTAL_PAGES - MAX_PYSC_PAGES; i++) {
         if (p->swap_monitor[i].p_va == p_va) {
-            if(readFromSwapFile(p, buff, i*PGSIZE, PGSIZE) < 0) break;
+            if (readFromSwapFile(p, buff, i * PGSIZE, PGSIZE) < 0) break;
             p->ram_monitor[free_ram_idx] = p->swap_monitor[i];
             p->swap_monitor[i].used = 0;
-            memmove((void*)p_va,buff,PGSIZE);
+            memmove((void *) p_va, buff, PGSIZE);
         }
     }
     return -1;
 }
 
-int page_from_disk(int va){
+int page_from_disk(int va) {
     struct proc *p = myproc();
     int p_va = PGROUNDDOWN(va);
-    char * np = kalloc();
+    char *np = kalloc();
     memset(np, 0, PGSIZE);
     int free_ram_idx = get_free_ram_idx();
     if (free_ram_idx >= 0) {
-        set_flag(p_va,PTE_PG,0);
-        set_flag(p_va,PTE_P | PTE_W | PTE_U,1);
+        set_flag(p_va, PTE_PG, 0);
+        set_flag(p_va, PTE_P | PTE_W | PTE_U, 1);
         set_flag(p_va, (int) np, 1);
         read_page_from_disk(p, free_ram_idx, p_va);
         return 1;
@@ -495,18 +504,19 @@ int page_from_disk(int va){
     p->pages_in_file++;
     int ram_idx = get_used_ram_idx();
     struct p_monitor page = p->ram_monitor[ram_idx];
-    set_flag(p_va,PTE_PG,0)
-    set_flag(p_va,PTE_P | PTE_W | PTE_U,1)
-    set_flag(p_va,np,1);
+    set_flag(p_va, PTE_PG, 0);
+    set_flag(p_va, PTE_P | PTE_W | PTE_U, 1);
+    set_flag(p_va, (int) np, 1);
     read_page_from_disk(p, ram_idx, p_va);
-    pte_t *pte = walkpgdir(p->pgdir, (int*)p_va, 0);
-    if(!pte)
+    pte_t *pte = walkpgdir(p->pgdir, (int *) p_va, 0);
+    if (!pte)
         return -1;
     int va1 = PTE_ADDR(*pte);
     memmove(np, buff, PGSIZE);
     write2file(ram_idx);
-    set_flag(page.p_va,PTE_PG,1);
-    set_flag(page.p_va,PTE_P,0);
+    set_flag(page.p_va, PTE_PG, 1);
+    set_flag(page.p_va, PTE_P, 0);
+    set_flag(page.p_va,~PTE_FLAGS(pte),0);
     char *v = P2V(va1);
     kfree(v);
     return 1;
