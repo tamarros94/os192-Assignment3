@@ -37,7 +37,7 @@ struct p_monitor {
     int used;
     pde_t *pgdir;
     uint p_va;
-    uint placeOnFile;
+    int place_in_queue;
 };
 
 enum procstate {
@@ -65,6 +65,9 @@ struct proc {
     struct p_monitor ram_monitor[MAX_PYSC_PAGES];
     struct p_monitor swap_monitor[MAX_TOTAL_PAGES - MAX_PYSC_PAGES];
     int pages_in_file;
+    int last_in_queue;
+    int protected;
+    int page_fault_counter;
 };
 
 // Process memory is laid out contiguously, low addresses first:

@@ -657,9 +657,33 @@ CMakeFiles/os192_Assignment3.dir/mp.c.o.provides: CMakeFiles/os192_Assignment3.d
 CMakeFiles/os192_Assignment3.dir/mp.c.o.provides.build: CMakeFiles/os192_Assignment3.dir/mp.c.o
 
 
+CMakeFiles/os192_Assignment3.dir/myMemTest.c.o: CMakeFiles/os192_Assignment3.dir/flags.make
+CMakeFiles/os192_Assignment3.dir/myMemTest.c.o: ../myMemTest.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/os192_Assignment3.dir/myMemTest.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os192_Assignment3.dir/myMemTest.c.o   -c /users/studs/bsc/2016/rosent/os192/os192-Assignment3/myMemTest.c
+
+CMakeFiles/os192_Assignment3.dir/myMemTest.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/os192_Assignment3.dir/myMemTest.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /users/studs/bsc/2016/rosent/os192/os192-Assignment3/myMemTest.c > CMakeFiles/os192_Assignment3.dir/myMemTest.c.i
+
+CMakeFiles/os192_Assignment3.dir/myMemTest.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/os192_Assignment3.dir/myMemTest.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /users/studs/bsc/2016/rosent/os192/os192-Assignment3/myMemTest.c -o CMakeFiles/os192_Assignment3.dir/myMemTest.c.s
+
+CMakeFiles/os192_Assignment3.dir/myMemTest.c.o.requires:
+
+.PHONY : CMakeFiles/os192_Assignment3.dir/myMemTest.c.o.requires
+
+CMakeFiles/os192_Assignment3.dir/myMemTest.c.o.provides: CMakeFiles/os192_Assignment3.dir/myMemTest.c.o.requires
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/myMemTest.c.o.provides.build
+.PHONY : CMakeFiles/os192_Assignment3.dir/myMemTest.c.o.provides
+
+CMakeFiles/os192_Assignment3.dir/myMemTest.c.o.provides.build: CMakeFiles/os192_Assignment3.dir/myMemTest.c.o
+
+
 CMakeFiles/os192_Assignment3.dir/picirq.c.o: CMakeFiles/os192_Assignment3.dir/flags.make
 CMakeFiles/os192_Assignment3.dir/picirq.c.o: ../picirq.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/os192_Assignment3.dir/picirq.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/os192_Assignment3.dir/picirq.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os192_Assignment3.dir/picirq.c.o   -c /users/studs/bsc/2016/rosent/os192/os192-Assignment3/picirq.c
 
 CMakeFiles/os192_Assignment3.dir/picirq.c.i: cmake_force
@@ -683,7 +707,7 @@ CMakeFiles/os192_Assignment3.dir/picirq.c.o.provides.build: CMakeFiles/os192_Ass
 
 CMakeFiles/os192_Assignment3.dir/pipe.c.o: CMakeFiles/os192_Assignment3.dir/flags.make
 CMakeFiles/os192_Assignment3.dir/pipe.c.o: ../pipe.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/os192_Assignment3.dir/pipe.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/os192_Assignment3.dir/pipe.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os192_Assignment3.dir/pipe.c.o   -c /users/studs/bsc/2016/rosent/os192/os192-Assignment3/pipe.c
 
 CMakeFiles/os192_Assignment3.dir/pipe.c.i: cmake_force
@@ -707,7 +731,7 @@ CMakeFiles/os192_Assignment3.dir/pipe.c.o.provides.build: CMakeFiles/os192_Assig
 
 CMakeFiles/os192_Assignment3.dir/printf.c.o: CMakeFiles/os192_Assignment3.dir/flags.make
 CMakeFiles/os192_Assignment3.dir/printf.c.o: ../printf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/os192_Assignment3.dir/printf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/os192_Assignment3.dir/printf.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os192_Assignment3.dir/printf.c.o   -c /users/studs/bsc/2016/rosent/os192/os192-Assignment3/printf.c
 
 CMakeFiles/os192_Assignment3.dir/printf.c.i: cmake_force
@@ -731,7 +755,7 @@ CMakeFiles/os192_Assignment3.dir/printf.c.o.provides.build: CMakeFiles/os192_Ass
 
 CMakeFiles/os192_Assignment3.dir/proc.c.o: CMakeFiles/os192_Assignment3.dir/flags.make
 CMakeFiles/os192_Assignment3.dir/proc.c.o: ../proc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/os192_Assignment3.dir/proc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/os192_Assignment3.dir/proc.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os192_Assignment3.dir/proc.c.o   -c /users/studs/bsc/2016/rosent/os192/os192-Assignment3/proc.c
 
 CMakeFiles/os192_Assignment3.dir/proc.c.i: cmake_force
@@ -755,7 +779,7 @@ CMakeFiles/os192_Assignment3.dir/proc.c.o.provides.build: CMakeFiles/os192_Assig
 
 CMakeFiles/os192_Assignment3.dir/rm.c.o: CMakeFiles/os192_Assignment3.dir/flags.make
 CMakeFiles/os192_Assignment3.dir/rm.c.o: ../rm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/os192_Assignment3.dir/rm.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/os192_Assignment3.dir/rm.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os192_Assignment3.dir/rm.c.o   -c /users/studs/bsc/2016/rosent/os192/os192-Assignment3/rm.c
 
 CMakeFiles/os192_Assignment3.dir/rm.c.i: cmake_force
@@ -779,7 +803,7 @@ CMakeFiles/os192_Assignment3.dir/rm.c.o.provides.build: CMakeFiles/os192_Assignm
 
 CMakeFiles/os192_Assignment3.dir/sh.c.o: CMakeFiles/os192_Assignment3.dir/flags.make
 CMakeFiles/os192_Assignment3.dir/sh.c.o: ../sh.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/os192_Assignment3.dir/sh.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/os192_Assignment3.dir/sh.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os192_Assignment3.dir/sh.c.o   -c /users/studs/bsc/2016/rosent/os192/os192-Assignment3/sh.c
 
 CMakeFiles/os192_Assignment3.dir/sh.c.i: cmake_force
@@ -803,7 +827,7 @@ CMakeFiles/os192_Assignment3.dir/sh.c.o.provides.build: CMakeFiles/os192_Assignm
 
 CMakeFiles/os192_Assignment3.dir/sleeplock.c.o: CMakeFiles/os192_Assignment3.dir/flags.make
 CMakeFiles/os192_Assignment3.dir/sleeplock.c.o: ../sleeplock.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/os192_Assignment3.dir/sleeplock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/os192_Assignment3.dir/sleeplock.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os192_Assignment3.dir/sleeplock.c.o   -c /users/studs/bsc/2016/rosent/os192/os192-Assignment3/sleeplock.c
 
 CMakeFiles/os192_Assignment3.dir/sleeplock.c.i: cmake_force
@@ -827,7 +851,7 @@ CMakeFiles/os192_Assignment3.dir/sleeplock.c.o.provides.build: CMakeFiles/os192_
 
 CMakeFiles/os192_Assignment3.dir/spinlock.c.o: CMakeFiles/os192_Assignment3.dir/flags.make
 CMakeFiles/os192_Assignment3.dir/spinlock.c.o: ../spinlock.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/os192_Assignment3.dir/spinlock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/os192_Assignment3.dir/spinlock.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os192_Assignment3.dir/spinlock.c.o   -c /users/studs/bsc/2016/rosent/os192/os192-Assignment3/spinlock.c
 
 CMakeFiles/os192_Assignment3.dir/spinlock.c.i: cmake_force
@@ -851,7 +875,7 @@ CMakeFiles/os192_Assignment3.dir/spinlock.c.o.provides.build: CMakeFiles/os192_A
 
 CMakeFiles/os192_Assignment3.dir/stressfs.c.o: CMakeFiles/os192_Assignment3.dir/flags.make
 CMakeFiles/os192_Assignment3.dir/stressfs.c.o: ../stressfs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/os192_Assignment3.dir/stressfs.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/os192_Assignment3.dir/stressfs.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os192_Assignment3.dir/stressfs.c.o   -c /users/studs/bsc/2016/rosent/os192/os192-Assignment3/stressfs.c
 
 CMakeFiles/os192_Assignment3.dir/stressfs.c.i: cmake_force
@@ -875,7 +899,7 @@ CMakeFiles/os192_Assignment3.dir/stressfs.c.o.provides.build: CMakeFiles/os192_A
 
 CMakeFiles/os192_Assignment3.dir/string.c.o: CMakeFiles/os192_Assignment3.dir/flags.make
 CMakeFiles/os192_Assignment3.dir/string.c.o: ../string.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/os192_Assignment3.dir/string.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/os192_Assignment3.dir/string.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os192_Assignment3.dir/string.c.o   -c /users/studs/bsc/2016/rosent/os192/os192-Assignment3/string.c
 
 CMakeFiles/os192_Assignment3.dir/string.c.i: cmake_force
@@ -899,7 +923,7 @@ CMakeFiles/os192_Assignment3.dir/string.c.o.provides.build: CMakeFiles/os192_Ass
 
 CMakeFiles/os192_Assignment3.dir/syscall.c.o: CMakeFiles/os192_Assignment3.dir/flags.make
 CMakeFiles/os192_Assignment3.dir/syscall.c.o: ../syscall.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/os192_Assignment3.dir/syscall.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/os192_Assignment3.dir/syscall.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os192_Assignment3.dir/syscall.c.o   -c /users/studs/bsc/2016/rosent/os192/os192-Assignment3/syscall.c
 
 CMakeFiles/os192_Assignment3.dir/syscall.c.i: cmake_force
@@ -923,7 +947,7 @@ CMakeFiles/os192_Assignment3.dir/syscall.c.o.provides.build: CMakeFiles/os192_As
 
 CMakeFiles/os192_Assignment3.dir/sysfile.c.o: CMakeFiles/os192_Assignment3.dir/flags.make
 CMakeFiles/os192_Assignment3.dir/sysfile.c.o: ../sysfile.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/os192_Assignment3.dir/sysfile.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/os192_Assignment3.dir/sysfile.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os192_Assignment3.dir/sysfile.c.o   -c /users/studs/bsc/2016/rosent/os192/os192-Assignment3/sysfile.c
 
 CMakeFiles/os192_Assignment3.dir/sysfile.c.i: cmake_force
@@ -947,7 +971,7 @@ CMakeFiles/os192_Assignment3.dir/sysfile.c.o.provides.build: CMakeFiles/os192_As
 
 CMakeFiles/os192_Assignment3.dir/sysproc.c.o: CMakeFiles/os192_Assignment3.dir/flags.make
 CMakeFiles/os192_Assignment3.dir/sysproc.c.o: ../sysproc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/os192_Assignment3.dir/sysproc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/os192_Assignment3.dir/sysproc.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os192_Assignment3.dir/sysproc.c.o   -c /users/studs/bsc/2016/rosent/os192/os192-Assignment3/sysproc.c
 
 CMakeFiles/os192_Assignment3.dir/sysproc.c.i: cmake_force
@@ -971,7 +995,7 @@ CMakeFiles/os192_Assignment3.dir/sysproc.c.o.provides.build: CMakeFiles/os192_As
 
 CMakeFiles/os192_Assignment3.dir/trap.c.o: CMakeFiles/os192_Assignment3.dir/flags.make
 CMakeFiles/os192_Assignment3.dir/trap.c.o: ../trap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/os192_Assignment3.dir/trap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/os192_Assignment3.dir/trap.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os192_Assignment3.dir/trap.c.o   -c /users/studs/bsc/2016/rosent/os192/os192-Assignment3/trap.c
 
 CMakeFiles/os192_Assignment3.dir/trap.c.i: cmake_force
@@ -995,7 +1019,7 @@ CMakeFiles/os192_Assignment3.dir/trap.c.o.provides.build: CMakeFiles/os192_Assig
 
 CMakeFiles/os192_Assignment3.dir/uart.c.o: CMakeFiles/os192_Assignment3.dir/flags.make
 CMakeFiles/os192_Assignment3.dir/uart.c.o: ../uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/os192_Assignment3.dir/uart.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/os192_Assignment3.dir/uart.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os192_Assignment3.dir/uart.c.o   -c /users/studs/bsc/2016/rosent/os192/os192-Assignment3/uart.c
 
 CMakeFiles/os192_Assignment3.dir/uart.c.i: cmake_force
@@ -1019,7 +1043,7 @@ CMakeFiles/os192_Assignment3.dir/uart.c.o.provides.build: CMakeFiles/os192_Assig
 
 CMakeFiles/os192_Assignment3.dir/ulib.c.o: CMakeFiles/os192_Assignment3.dir/flags.make
 CMakeFiles/os192_Assignment3.dir/ulib.c.o: ../ulib.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/os192_Assignment3.dir/ulib.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/os192_Assignment3.dir/ulib.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os192_Assignment3.dir/ulib.c.o   -c /users/studs/bsc/2016/rosent/os192/os192-Assignment3/ulib.c
 
 CMakeFiles/os192_Assignment3.dir/ulib.c.i: cmake_force
@@ -1043,7 +1067,7 @@ CMakeFiles/os192_Assignment3.dir/ulib.c.o.provides.build: CMakeFiles/os192_Assig
 
 CMakeFiles/os192_Assignment3.dir/umalloc.c.o: CMakeFiles/os192_Assignment3.dir/flags.make
 CMakeFiles/os192_Assignment3.dir/umalloc.c.o: ../umalloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/os192_Assignment3.dir/umalloc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/os192_Assignment3.dir/umalloc.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os192_Assignment3.dir/umalloc.c.o   -c /users/studs/bsc/2016/rosent/os192/os192-Assignment3/umalloc.c
 
 CMakeFiles/os192_Assignment3.dir/umalloc.c.i: cmake_force
@@ -1067,7 +1091,7 @@ CMakeFiles/os192_Assignment3.dir/umalloc.c.o.provides.build: CMakeFiles/os192_As
 
 CMakeFiles/os192_Assignment3.dir/usertests.c.o: CMakeFiles/os192_Assignment3.dir/flags.make
 CMakeFiles/os192_Assignment3.dir/usertests.c.o: ../usertests.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/os192_Assignment3.dir/usertests.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/os192_Assignment3.dir/usertests.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os192_Assignment3.dir/usertests.c.o   -c /users/studs/bsc/2016/rosent/os192/os192-Assignment3/usertests.c
 
 CMakeFiles/os192_Assignment3.dir/usertests.c.i: cmake_force
@@ -1091,7 +1115,7 @@ CMakeFiles/os192_Assignment3.dir/usertests.c.o.provides.build: CMakeFiles/os192_
 
 CMakeFiles/os192_Assignment3.dir/vm.c.o: CMakeFiles/os192_Assignment3.dir/flags.make
 CMakeFiles/os192_Assignment3.dir/vm.c.o: ../vm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/os192_Assignment3.dir/vm.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/os192_Assignment3.dir/vm.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os192_Assignment3.dir/vm.c.o   -c /users/studs/bsc/2016/rosent/os192/os192-Assignment3/vm.c
 
 CMakeFiles/os192_Assignment3.dir/vm.c.i: cmake_force
@@ -1115,7 +1139,7 @@ CMakeFiles/os192_Assignment3.dir/vm.c.o.provides.build: CMakeFiles/os192_Assignm
 
 CMakeFiles/os192_Assignment3.dir/wc.c.o: CMakeFiles/os192_Assignment3.dir/flags.make
 CMakeFiles/os192_Assignment3.dir/wc.c.o: ../wc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/os192_Assignment3.dir/wc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/os192_Assignment3.dir/wc.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os192_Assignment3.dir/wc.c.o   -c /users/studs/bsc/2016/rosent/os192/os192-Assignment3/wc.c
 
 CMakeFiles/os192_Assignment3.dir/wc.c.i: cmake_force
@@ -1139,7 +1163,7 @@ CMakeFiles/os192_Assignment3.dir/wc.c.o.provides.build: CMakeFiles/os192_Assignm
 
 CMakeFiles/os192_Assignment3.dir/zombie.c.o: CMakeFiles/os192_Assignment3.dir/flags.make
 CMakeFiles/os192_Assignment3.dir/zombie.c.o: ../zombie.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/os192_Assignment3.dir/zombie.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/os192_Assignment3.dir/zombie.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os192_Assignment3.dir/zombie.c.o   -c /users/studs/bsc/2016/rosent/os192/os192-Assignment3/zombie.c
 
 CMakeFiles/os192_Assignment3.dir/zombie.c.i: cmake_force
@@ -1188,6 +1212,7 @@ os192_Assignment3_OBJECTS = \
 "CMakeFiles/os192_Assignment3.dir/mkdir.c.o" \
 "CMakeFiles/os192_Assignment3.dir/mkfs.c.o" \
 "CMakeFiles/os192_Assignment3.dir/mp.c.o" \
+"CMakeFiles/os192_Assignment3.dir/myMemTest.c.o" \
 "CMakeFiles/os192_Assignment3.dir/picirq.c.o" \
 "CMakeFiles/os192_Assignment3.dir/pipe.c.o" \
 "CMakeFiles/os192_Assignment3.dir/printf.c.o" \
@@ -1238,6 +1263,7 @@ os192_Assignment3: CMakeFiles/os192_Assignment3.dir/memide.c.o
 os192_Assignment3: CMakeFiles/os192_Assignment3.dir/mkdir.c.o
 os192_Assignment3: CMakeFiles/os192_Assignment3.dir/mkfs.c.o
 os192_Assignment3: CMakeFiles/os192_Assignment3.dir/mp.c.o
+os192_Assignment3: CMakeFiles/os192_Assignment3.dir/myMemTest.c.o
 os192_Assignment3: CMakeFiles/os192_Assignment3.dir/picirq.c.o
 os192_Assignment3: CMakeFiles/os192_Assignment3.dir/pipe.c.o
 os192_Assignment3: CMakeFiles/os192_Assignment3.dir/printf.c.o
@@ -1261,7 +1287,7 @@ os192_Assignment3: CMakeFiles/os192_Assignment3.dir/wc.c.o
 os192_Assignment3: CMakeFiles/os192_Assignment3.dir/zombie.c.o
 os192_Assignment3: CMakeFiles/os192_Assignment3.dir/build.make
 os192_Assignment3: CMakeFiles/os192_Assignment3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Linking C executable os192_Assignment3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Linking C executable os192_Assignment3"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/os192_Assignment3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1294,6 +1320,7 @@ CMakeFiles/os192_Assignment3.dir/requires: CMakeFiles/os192_Assignment3.dir/memi
 CMakeFiles/os192_Assignment3.dir/requires: CMakeFiles/os192_Assignment3.dir/mkdir.c.o.requires
 CMakeFiles/os192_Assignment3.dir/requires: CMakeFiles/os192_Assignment3.dir/mkfs.c.o.requires
 CMakeFiles/os192_Assignment3.dir/requires: CMakeFiles/os192_Assignment3.dir/mp.c.o.requires
+CMakeFiles/os192_Assignment3.dir/requires: CMakeFiles/os192_Assignment3.dir/myMemTest.c.o.requires
 CMakeFiles/os192_Assignment3.dir/requires: CMakeFiles/os192_Assignment3.dir/picirq.c.o.requires
 CMakeFiles/os192_Assignment3.dir/requires: CMakeFiles/os192_Assignment3.dir/pipe.c.o.requires
 CMakeFiles/os192_Assignment3.dir/requires: CMakeFiles/os192_Assignment3.dir/printf.c.o.requires

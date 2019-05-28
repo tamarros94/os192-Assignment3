@@ -24,6 +24,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/os192_Assignment3.dir/mkdir.c.o"
   "CMakeFiles/os192_Assignment3.dir/mkfs.c.o"
   "CMakeFiles/os192_Assignment3.dir/mp.c.o"
+  "CMakeFiles/os192_Assignment3.dir/myMemTest.c.o"
   "CMakeFiles/os192_Assignment3.dir/picirq.c.o"
   "CMakeFiles/os192_Assignment3.dir/pipe.c.o"
   "CMakeFiles/os192_Assignment3.dir/printf.c.o"

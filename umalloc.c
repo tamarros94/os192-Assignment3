@@ -21,76 +21,6 @@ static p_node *head = 0;
 
 void init_list();
 
-void *
-pmalloc() {
-    if (!head)
-        init_list();
-
-    struct p_node *curr = head;
-
-    while (1) {
-        // no free node found
-        if (curr->next == 0 && curr->free == 0) {
-            // create new node
-            curr->next = (p_node *) malloc(sizeof(struct p_node));
-            curr->next->va = (uint) sbrk(PGSIZE);
-            break;
-        } else {
-            if (curr->free == 0) break;
-            curr = curr->next;
-        }
-        curr = curr->next;
-    }
-
-    curr->free = 0;
-
-    if(set_flag(curr->va, PTE_1|PTE_P|PTE_U|PTE_W,1)){
-        set_flag(curr->va,~PTE_P,0);
-        curr->free = 1;
-        return 0;
-    }
-    return (void *) curr->va;
-}
-
-int protect_page(void *ap) {
-    int ret = -1;
-    struct p_node *curr = head;
-    int found_node = 0;
-    while (curr != 0) {
-        if (curr->va == (uint) ap) {
-            found_node = 1;
-            break;
-        }
-        curr = curr->next;
-    }
-    if (!found_node) return -1;
-
-    if ((get_flags((uint) ap))&PTE_1) {
-        ret = set_flag((uint) ap, PTE_W, 0);
-    }
-    return ret;
-}
-
-int pfree(void* ap){
-    struct p_node* curr = head;
-    int found_node = 0;
-    while (curr != 0) {
-        if (curr->va == (uint) ap) {
-            found_node = 1;
-            break;
-        }
-        curr = curr->next;
-    }
-    if (!found_node) return -1;
-    int flags = get_flags((uint)ap);
-    if((!(flags & PTE_1)) || flags&PTE_W){
-        return -1;
-    }
-    // Set internal linkedlist node to free
-    curr->free = 1;
-    return 1;
-}
-
 void init_list() {
     head = (p_node *) malloc(sizeof(struct p_node));
     head->va = (uint) sbrk(PGSIZE);
@@ -133,11 +63,11 @@ free(void *ap) {
 }
 
 static Header *
-morecore(uint nu) {
+morecore(uint nu, int pmalloced) {
     char *p;
     Header *hp;
 
-    if (nu < 4096)
+    if (nu < 4096 && !pmalloced)
         nu = 4096;
     p = sbrk(nu * sizeof(Header));
     if (p == (char *) -1)
@@ -171,7 +101,80 @@ malloc(uint nbytes) {
             return (void *) (p + 1);
         }
         if (p == freep)
-            if ((p = morecore(nunits)) == 0)
+            if ((p = morecore(nunits,0)) == 0)
                 return 0;
     }
+}
+
+
+void *
+pmalloc() {
+    if (!head)
+        init_list();
+
+    struct p_node *curr = head;
+
+    while (1) {
+        // no free node found
+        if (curr->next == 0 && curr->free == 0) {
+            // create new node
+            curr->next = (p_node *) malloc(sizeof(struct p_node));
+            // CHANGE sbrk -> morecore
+            curr->next->va = (uint) morecore(512, 1);
+            break;
+        } else {
+            if (curr->free == 0) break;
+            curr = curr->next;
+        }
+        curr = curr->next;
+    }
+
+    curr->free = 0;
+
+    if(set_flag(curr->va, PTE_1|PTE_P|PTE_U|PTE_W,1)){
+        set_flag(curr->va,~PTE_P,0);
+        curr->free = 1;
+        return 0;
+    }
+    return (void *) curr->va;
+}
+
+int protect_page(void *ap) {
+    int ret = -1;
+    struct p_node *curr = head;
+    int found_node = 0;
+    while (curr != 0) {
+        if (curr->va == (uint) ap) {
+            found_node = 1;
+            break;
+        }
+        curr = curr->next;
+    }
+    if (!found_node) return -1;
+
+    if ((get_flags((uint) ap))&PTE_1) {
+        ret = set_flag((uint) ap, PTE_W, 0);
+    }
+
+    return ret;
+}
+
+int pfree(void* ap){
+    struct p_node* curr = head;
+    int found_node = 0;
+    while (curr != 0) {
+        if (curr->va == (uint) ap) {
+            found_node = 1;
+            break;
+        }
+        curr = curr->next;
+    }
+    if (!found_node) return -1;
+    int flags = get_flags((uint)ap);
+    if((!(flags & PTE_1)) || flags&PTE_W){
+        return -1;
+    }
+    // Set internal linkedlist node to free
+    curr->free = 1;
+    return 1;
 }

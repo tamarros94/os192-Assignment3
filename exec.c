@@ -93,6 +93,15 @@ exec(char *path, char **argv)
       last = s+1;
   safestrcpy(curproc->name, last, sizeof(curproc->name));
 
+    for (int j = 0; j < MAX_PYSC_PAGES; ++j) {
+        if(curproc->ram_monitor[j].used==1)
+            curproc->ram_monitor[j].pgdir = pgdir;
+    }
+    for (int j = 0; j < MAX_TOTAL_PAGES-MAX_PYSC_PAGES; ++j) {
+        if(curproc->swap_monitor[j].used==1)
+            curproc->swap_monitor[j].pgdir = pgdir;
+    }
+
   // Commit to the user image.
   oldpgdir = curproc->pgdir;
   curproc->pgdir = pgdir;

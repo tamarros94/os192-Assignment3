@@ -191,6 +191,9 @@
 		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/mp.h">
 			<Option target="os192_Assignment3"/>
 		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/myMemTest.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
 		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/param.h">
 			<Option target="os192_Assignment3"/>
 		</Unit>

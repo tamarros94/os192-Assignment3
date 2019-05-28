@@ -798,6 +798,33 @@ mp.c.s:
 	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/mp.c.s
 .PHONY : mp.c.s
 
+myMemTest.o: myMemTest.c.o
+
+.PHONY : myMemTest.o
+
+# target to build an object file
+myMemTest.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/myMemTest.c.o
+.PHONY : myMemTest.c.o
+
+myMemTest.i: myMemTest.c.i
+
+.PHONY : myMemTest.i
+
+# target to preprocess a source file
+myMemTest.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/myMemTest.c.i
+.PHONY : myMemTest.c.i
+
+myMemTest.s: myMemTest.c.s
+
+.PHONY : myMemTest.s
+
+# target to generate assembly for a file
+myMemTest.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/myMemTest.c.s
+.PHONY : myMemTest.c.s
+
 picirq.o: picirq.c.o
 
 .PHONY : picirq.o
@@ -1449,6 +1476,9 @@ help:
 	@echo "... mp.o"
 	@echo "... mp.i"
 	@echo "... mp.s"
+	@echo "... myMemTest.o"
+	@echo "... myMemTest.i"
+	@echo "... myMemTest.s"
 	@echo "... picirq.o"
 	@echo "... picirq.i"
 	@echo "... picirq.s"

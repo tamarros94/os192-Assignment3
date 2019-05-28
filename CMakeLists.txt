@@ -43,6 +43,7 @@ add_executable(os192_Assignment3
         mmu.h
         mp.c
         mp.h
+        myMemTest.c
         param.h
         picirq.c
         pipe.c

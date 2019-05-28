@@ -227,6 +227,7 @@ int write2file(int ram_idx) {
     p->swap_monitor[swap_idx].pgdir = p->ram_monitor[ram_idx].pgdir;
     p->swap_monitor[swap_idx].p_va = p->ram_monitor[ram_idx].p_va;
     p->swap_monitor[swap_idx].used = 1;
+    p->swap_monitor[swap_idx].place_in_queue = 0;
 
     return success;
 }
@@ -247,24 +248,77 @@ void add2ram(pde_t *pgdir, uint p_va) {
     myproc()->ram_monitor[idx].used = 1;
     myproc()->ram_monitor[idx].pgdir = pgdir;
     myproc()->ram_monitor[idx].p_va = p_va;
+    myproc()->last_in_queue++;
+    myproc()->ram_monitor[idx].place_in_queue = myproc()->last_in_queue;
 }
 
-
-int get_used_ram_idx() {
-    if (myproc() == 0)
-        return -1;
-    int i;
-    for (i = 0; i < MAX_PYSC_PAGES; i++) {
-        if (myproc()->ram_monitor[i].used == 1)
-            return i;
+int select_LIFO() {
+    int last = 0;
+    struct proc *p = myproc();
+    int found = 0;
+    int p_idx = 0;
+    for (int i = 0; i < MAX_PYSC_PAGES; i++) {
+        if (p->ram_monitor[i].place_in_queue > last && p->ram_monitor[i].used == 1) {
+            last = p->ram_monitor[i].place_in_queue;
+            found = 1;
+            p_idx = i;
+        }
     }
-    return -1; //NO ROOM IN RAMCTRLR
+    if (found)
+        return p_idx;
+    else return -1;
+}
+
+int select_SCFIFO() {
+    struct proc *p = myproc();
+    int found;
+    int p_idx = 0;
+    while (1) {
+        found = 0;
+        int first = 0x7FFFFFFF;
+        for (int i = 0; i < MAX_PYSC_PAGES; i++) {
+            if (p->ram_monitor[i].place_in_queue <= first && p->ram_monitor[i].used == 1) {
+                first = p->ram_monitor[i].place_in_queue;
+                found = 1;
+                p_idx = i;
+            }
+        }
+        if (!found)
+            return -1;
+        pte_t *pte = walkpgdir(p->ram_monitor[p_idx].pgdir, (char *) p->ram_monitor[p_idx].p_va, 0);
+        if (!(*pte & PTE_A))
+            break;
+        else {
+            set_flag(p->ram_monitor[p_idx].p_va, PTE_A, 0);
+            p->last_in_queue++;
+            p->ram_monitor[p_idx].place_in_queue = p->last_in_queue;
+        }
+    }
+    return p_idx;
+}
+
+int replace_page_by_policy() {
+#if LIFO
+    return select_LIFO();
+#endif
+
+#if SCFIFO
+    return select_SCFIFO();
+#endif
+    panic("invalid policy!");
+}
+
+int select_NONE() {
+#if NONE
+    return 1;
+#endif
+    return 0;
 }
 
 void swap(pde_t *pgdir, uint p_va) {
     struct proc *p = myproc();
     p->pages_in_file++;
-    int ram_idx = get_used_ram_idx();
+    int ram_idx = replace_page_by_policy();
     pte_t *pte = walkpgdir(pgdir, (int *) p_va, 0);
     int p_pa = PTE_ADDR(*pte);
     write2file(ram_idx);
@@ -298,12 +352,11 @@ allocuvm(pde_t *pgdir, uint oldsz, uint newsz) {
         }
         memset(mem, 0, PGSIZE);
         mappages(pgdir, (char *) a, PGSIZE, V2P(mem), PTE_W | PTE_U);
-        if (myproc()->pid > 2) {
-            if ((PGROUNDUP(oldsz) + 1) / PGSIZE <= MAX_PYSC_PAGES)
+        if (myproc()->pid > 2 && !select_NONE()) {
+            if ((PGROUNDUP(oldsz)) / PGSIZE <= MAX_PYSC_PAGES)
                 add2ram(pgdir, a);
 
             else swap(pgdir, a);
-
         }
     }
     return newsz;
@@ -332,9 +385,11 @@ deallocuvm(pde_t *pgdir, uint oldsz, uint newsz) {
                 panic("kfree");
             char *v = P2V(pa);
             kfree(v);
-            for (int i = 0; i < MAX_PYSC_PAGES; i++) {
-                if (myproc()->ram_monitor[i].p_va == a && myproc()->ram_monitor[i].pgdir == pgdir )
-                    myproc()->ram_monitor[i].used = 0;
+            if (!select_NONE()) {
+                for (int i = 0; i < MAX_PYSC_PAGES; i++) {
+                    if (myproc()->ram_monitor[i].p_va == a && myproc()->ram_monitor[i].pgdir == pgdir)
+                        myproc()->ram_monitor[i].used = 0;
+                }
             }
             *pte = 0;
         }
@@ -388,10 +443,10 @@ copyuvm(pde_t *pgdir, uint sz) {
             panic("copyuvm: pte should exist");
         if (!(*pte & PTE_P))
             panic("copyuvm: page not present");
-        if (*pte & PTE_PG){
-            set_flag(i,PTE_PG,1);
-            set_flag(i,PTE_P,0);
-            set_flag(i,~PTE_FLAGS(pte),0);
+        if (*pte & PTE_PG) {
+            set_flag(i, PTE_PG, 1);
+            set_flag(i, PTE_P, 0);
+            set_flag(i, ~PTE_FLAGS(pte), 0);
             continue;
         }
         pa = PTE_ADDR(*pte);
@@ -482,7 +537,10 @@ int read_page_from_disk(struct proc *p, int free_ram_idx, int p_va) {
             if (readFromSwapFile(p, buff, i * PGSIZE, PGSIZE) < 0) break;
             p->ram_monitor[free_ram_idx] = p->swap_monitor[i];
             p->swap_monitor[i].used = 0;
-            memmove((void *) p_va, buff, PGSIZE);
+            p->last_in_queue++;
+            p->ram_monitor[free_ram_idx].place_in_queue = p->last_in_queue;
+            // TODO
+//            memmove((void *) p_va, buff, PGSIZE);
         }
     }
     return -1;
@@ -490,6 +548,7 @@ int read_page_from_disk(struct proc *p, int free_ram_idx, int p_va) {
 
 int page_from_disk(int va) {
     struct proc *p = myproc();
+    p->page_fault_counter++;
     int p_va = PGROUNDDOWN(va);
     char *np = kalloc();
     memset(np, 0, PGSIZE);
@@ -502,7 +561,7 @@ int page_from_disk(int va) {
         return 1;
     }
     p->pages_in_file++;
-    int ram_idx = get_used_ram_idx();
+    int ram_idx = replace_page_by_policy();
     struct p_monitor page = p->ram_monitor[ram_idx];
     set_flag(p_va, PTE_PG, 0);
     set_flag(p_va, PTE_P | PTE_W | PTE_U, 1);
@@ -516,7 +575,7 @@ int page_from_disk(int va) {
     write2file(ram_idx);
     set_flag(page.p_va, PTE_PG, 1);
     set_flag(page.p_va, PTE_P, 0);
-    set_flag(page.p_va,~PTE_FLAGS(pte),0);
+    set_flag(page.p_va, ~PTE_FLAGS(pte), 0);
     char *v = P2V(va1);
     kfree(v);
     return 1;
