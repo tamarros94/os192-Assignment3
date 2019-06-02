@@ -35,6 +35,10 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/."/>
+					<Add directory="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
@@ -56,6 +60,10 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/."/>
+					<Add directory="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
@@ -80,6 +88,189 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/OforktestO.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/OusertestsO.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/Ousertests_pagingO.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/quitXV6.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_1.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_10.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_11.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_12.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_13.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_14.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_15.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_16.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_17.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_18.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_19.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_2.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_20.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_21.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_22.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_3.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_4.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_5.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_6.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_7.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_8.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_9.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_1.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_10.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_11.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_12.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_13.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_14.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_15.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_16.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_17.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_18.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_19.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_2.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_20.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_21.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_22.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_23.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_24.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_25.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_26.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_27.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_28.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_29.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_3.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_4.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_5.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_6.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_7.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_8.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_9.c">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/include/ProjectTest.h">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/include/SubTests.h">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/include/Tests.h">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/src/ProjectTest.cpp">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/src/SubTests.cpp">
+			<Option target="os192_Assignment3"/>
+		</Unit>
+		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/src/Tests.cpp">
+			<Option target="os192_Assignment3"/>
+		</Unit>
 		<Unit filename="/users/studs/bsc/2016/rosent/os192/os192-Assignment3/asm.h">
 			<Option target="os192_Assignment3"/>
 		</Unit>

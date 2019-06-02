@@ -1,11 +1,73 @@
 cmake_minimum_required(VERSION 3.10)
-project(os192_Assignment3 C)
+project(os192_Assignment3)
 
-set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
+include_directories(Project_Test/include)
 
 add_executable(os192_Assignment3
+        Project_Test/include/ProjectTest.h
+        Project_Test/include/SubTests.h
+        Project_Test/include/Tests.h
+        Project_Test/src/ProjectTest.cpp
+        Project_Test/src/SubTests.cpp
+        Project_Test/src/Tests.cpp
+        Project_Test/XV6_Tests/OforktestO.c
+        Project_Test/XV6_Tests/Ousertests_pagingO.c
+        Project_Test/XV6_Tests/OusertestsO.c
+        Project_Test/XV6_Tests/quitXV6.c
+        Project_Test/XV6_Tests/task1_1.c
+        Project_Test/XV6_Tests/task1_10.c
+        Project_Test/XV6_Tests/task1_11.c
+        Project_Test/XV6_Tests/task1_12.c
+        Project_Test/XV6_Tests/task1_13.c
+        Project_Test/XV6_Tests/task1_14.c
+        Project_Test/XV6_Tests/task1_15.c
+        Project_Test/XV6_Tests/task1_16.c
+        Project_Test/XV6_Tests/task1_17.c
+        Project_Test/XV6_Tests/task1_18.c
+        Project_Test/XV6_Tests/task1_19.c
+        Project_Test/XV6_Tests/task1_2.c
+        Project_Test/XV6_Tests/task1_20.c
+        Project_Test/XV6_Tests/task1_21.c
+        Project_Test/XV6_Tests/task1_22.c
+        Project_Test/XV6_Tests/task1_3.c
+        Project_Test/XV6_Tests/task1_4.c
+        Project_Test/XV6_Tests/task1_5.c
+        Project_Test/XV6_Tests/task1_6.c
+        Project_Test/XV6_Tests/task1_7.c
+        Project_Test/XV6_Tests/task1_8.c
+        Project_Test/XV6_Tests/task1_9.c
+        Project_Test/XV6_Tests/task2_1.c
+        Project_Test/XV6_Tests/task2_10.c
+        Project_Test/XV6_Tests/task2_11.c
+        Project_Test/XV6_Tests/task2_12.c
+        Project_Test/XV6_Tests/task2_13.c
+        Project_Test/XV6_Tests/task2_14.c
+        Project_Test/XV6_Tests/task2_15.c
+        Project_Test/XV6_Tests/task2_16.c
+        Project_Test/XV6_Tests/task2_17.c
+        Project_Test/XV6_Tests/task2_18.c
+        Project_Test/XV6_Tests/task2_19.c
+        Project_Test/XV6_Tests/task2_2.c
+        Project_Test/XV6_Tests/task2_20.c
+        Project_Test/XV6_Tests/task2_21.c
+        Project_Test/XV6_Tests/task2_22.c
+        Project_Test/XV6_Tests/task2_23.c
+        Project_Test/XV6_Tests/task2_24.c
+        Project_Test/XV6_Tests/task2_25.c
+        Project_Test/XV6_Tests/task2_26.c
+        Project_Test/XV6_Tests/task2_27.c
+        Project_Test/XV6_Tests/task2_28.c
+        Project_Test/XV6_Tests/task2_29.c
+        Project_Test/XV6_Tests/task2_3.c
+        Project_Test/XV6_Tests/task2_4.c
+        Project_Test/XV6_Tests/task2_5.c
+        Project_Test/XV6_Tests/task2_6.c
+        Project_Test/XV6_Tests/task2_7.c
+        Project_Test/XV6_Tests/task2_8.c
+        Project_Test/XV6_Tests/task2_9.c
         asm.h
         bio.c
         bootmain.c

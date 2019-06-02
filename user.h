@@ -48,7 +48,7 @@ int yield(void);
 
 int get_flags(uint);
 
-int set_flag(uint, int, int);
+int set_flag(uint,int, int);
 
 // ulib.c
 int stat(char *, struct stat *);

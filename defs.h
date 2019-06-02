@@ -57,6 +57,8 @@ int		readFromSwapFile(struct proc * p, char* buffer, uint placeOnFile, uint size
 int		writeToSwapFile(struct proc* p, char* buffer, uint placeOnFile, uint size);
 int		removeSwapFile(struct proc* p);
 int 			copyParentSwapFile(struct proc* np);
+int     write2file(int p_va, pde_t *pgdir);
+int read_page_from_disk(struct proc *p, int ram_idx, int p_va, char* buff);
 
 
 // ide.c

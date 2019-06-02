@@ -299,6 +299,7 @@ exit(void) {
 
     // Jump into the scheduler, never to return.
     curproc->state = ZOMBIE;
+//    procdump();
     sched();
     panic("zombie exit");
 }
@@ -529,9 +530,9 @@ kill(int pid) {
     return -1;
 }
 
-int pages_in_use(struct proc *p){
+int used_swap_pages(struct proc *p){
     int amount_to_return =0;
-    for(int i=0; i<MAX_PYSC_PAGES; i++){
+    for(int i=0; i<MAX_TOTAL_PAGES-MAX_PYSC_PAGES; i++){
         if(p->swap_monitor[i].used == 1)
             amount_to_return++;
     }
@@ -556,6 +557,8 @@ procdump(void) {
     struct proc *p;
     char *state;
     uint pc[10];
+    int total_pages;
+    int swap_pages;
 
     for (p = ptable.proc; p < &ptable.proc[NPROC]; p++) {
         if (p->state == UNUSED)
@@ -564,11 +567,11 @@ procdump(void) {
             state = states[p->state];
         else
             state = "???";
-        int allocater_pages = PGROUNDUP(p->sz)/PGSIZE;
-        int paged_out_amount = pages_in_use(p);
-        // TODO
+        cprintf("%d %s\n", p->pid, state);
+        total_pages = PGROUNDUP(p->sz)/PGSIZE;
+        swap_pages = used_swap_pages(p);
         p->protected = 0;
-        cprintf("\n%d %d %d %d %d %s\n",allocater_pages, paged_out_amount, p->protected,p->page_fault_counter, p->pages_in_file,  p->name);
+        cprintf("\ntotal_pages:%d swap_pages:%d protected:%d page_fault:%d pages_in_file:%d name:%s\n",total_pages, swap_pages, p->protected,p->page_fault_counter, p->pages_in_file,  p->name);
         if (p->state == SLEEPING) {
             getcallerpcs((uint *) p->context->ebp + 2, pc);
             for (i = 0; i < 10 && pc[i] != 0; i++)

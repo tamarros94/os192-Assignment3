@@ -152,6 +152,7 @@ filewrite(struct file *f, char *addr, int n)
     }
     return i == n ? n : -1;
   }
-  panic("filewrite");
+    cprintf("type:%d\n", f->type);
+    panic("filewrite");
 }
 

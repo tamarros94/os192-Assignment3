@@ -123,6 +123,1572 @@ os192_Assignment3/fast:
 	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/build
 .PHONY : os192_Assignment3/fast
 
+Project_Test/XV6_Tests/OforktestO.o: Project_Test/XV6_Tests/OforktestO.c.o
+
+.PHONY : Project_Test/XV6_Tests/OforktestO.o
+
+# target to build an object file
+Project_Test/XV6_Tests/OforktestO.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/OforktestO.c.o
+.PHONY : Project_Test/XV6_Tests/OforktestO.c.o
+
+Project_Test/XV6_Tests/OforktestO.i: Project_Test/XV6_Tests/OforktestO.c.i
+
+.PHONY : Project_Test/XV6_Tests/OforktestO.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/OforktestO.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/OforktestO.c.i
+.PHONY : Project_Test/XV6_Tests/OforktestO.c.i
+
+Project_Test/XV6_Tests/OforktestO.s: Project_Test/XV6_Tests/OforktestO.c.s
+
+.PHONY : Project_Test/XV6_Tests/OforktestO.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/OforktestO.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/OforktestO.c.s
+.PHONY : Project_Test/XV6_Tests/OforktestO.c.s
+
+Project_Test/XV6_Tests/OusertestsO.o: Project_Test/XV6_Tests/OusertestsO.c.o
+
+.PHONY : Project_Test/XV6_Tests/OusertestsO.o
+
+# target to build an object file
+Project_Test/XV6_Tests/OusertestsO.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/OusertestsO.c.o
+.PHONY : Project_Test/XV6_Tests/OusertestsO.c.o
+
+Project_Test/XV6_Tests/OusertestsO.i: Project_Test/XV6_Tests/OusertestsO.c.i
+
+.PHONY : Project_Test/XV6_Tests/OusertestsO.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/OusertestsO.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/OusertestsO.c.i
+.PHONY : Project_Test/XV6_Tests/OusertestsO.c.i
+
+Project_Test/XV6_Tests/OusertestsO.s: Project_Test/XV6_Tests/OusertestsO.c.s
+
+.PHONY : Project_Test/XV6_Tests/OusertestsO.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/OusertestsO.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/OusertestsO.c.s
+.PHONY : Project_Test/XV6_Tests/OusertestsO.c.s
+
+Project_Test/XV6_Tests/Ousertests_pagingO.o: Project_Test/XV6_Tests/Ousertests_pagingO.c.o
+
+.PHONY : Project_Test/XV6_Tests/Ousertests_pagingO.o
+
+# target to build an object file
+Project_Test/XV6_Tests/Ousertests_pagingO.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/Ousertests_pagingO.c.o
+.PHONY : Project_Test/XV6_Tests/Ousertests_pagingO.c.o
+
+Project_Test/XV6_Tests/Ousertests_pagingO.i: Project_Test/XV6_Tests/Ousertests_pagingO.c.i
+
+.PHONY : Project_Test/XV6_Tests/Ousertests_pagingO.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/Ousertests_pagingO.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/Ousertests_pagingO.c.i
+.PHONY : Project_Test/XV6_Tests/Ousertests_pagingO.c.i
+
+Project_Test/XV6_Tests/Ousertests_pagingO.s: Project_Test/XV6_Tests/Ousertests_pagingO.c.s
+
+.PHONY : Project_Test/XV6_Tests/Ousertests_pagingO.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/Ousertests_pagingO.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/Ousertests_pagingO.c.s
+.PHONY : Project_Test/XV6_Tests/Ousertests_pagingO.c.s
+
+Project_Test/XV6_Tests/quitXV6.o: Project_Test/XV6_Tests/quitXV6.c.o
+
+.PHONY : Project_Test/XV6_Tests/quitXV6.o
+
+# target to build an object file
+Project_Test/XV6_Tests/quitXV6.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/quitXV6.c.o
+.PHONY : Project_Test/XV6_Tests/quitXV6.c.o
+
+Project_Test/XV6_Tests/quitXV6.i: Project_Test/XV6_Tests/quitXV6.c.i
+
+.PHONY : Project_Test/XV6_Tests/quitXV6.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/quitXV6.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/quitXV6.c.i
+.PHONY : Project_Test/XV6_Tests/quitXV6.c.i
+
+Project_Test/XV6_Tests/quitXV6.s: Project_Test/XV6_Tests/quitXV6.c.s
+
+.PHONY : Project_Test/XV6_Tests/quitXV6.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/quitXV6.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/quitXV6.c.s
+.PHONY : Project_Test/XV6_Tests/quitXV6.c.s
+
+Project_Test/XV6_Tests/task1_1.o: Project_Test/XV6_Tests/task1_1.c.o
+
+.PHONY : Project_Test/XV6_Tests/task1_1.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task1_1.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_1.c.o
+.PHONY : Project_Test/XV6_Tests/task1_1.c.o
+
+Project_Test/XV6_Tests/task1_1.i: Project_Test/XV6_Tests/task1_1.c.i
+
+.PHONY : Project_Test/XV6_Tests/task1_1.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task1_1.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_1.c.i
+.PHONY : Project_Test/XV6_Tests/task1_1.c.i
+
+Project_Test/XV6_Tests/task1_1.s: Project_Test/XV6_Tests/task1_1.c.s
+
+.PHONY : Project_Test/XV6_Tests/task1_1.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task1_1.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_1.c.s
+.PHONY : Project_Test/XV6_Tests/task1_1.c.s
+
+Project_Test/XV6_Tests/task1_10.o: Project_Test/XV6_Tests/task1_10.c.o
+
+.PHONY : Project_Test/XV6_Tests/task1_10.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task1_10.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_10.c.o
+.PHONY : Project_Test/XV6_Tests/task1_10.c.o
+
+Project_Test/XV6_Tests/task1_10.i: Project_Test/XV6_Tests/task1_10.c.i
+
+.PHONY : Project_Test/XV6_Tests/task1_10.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task1_10.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_10.c.i
+.PHONY : Project_Test/XV6_Tests/task1_10.c.i
+
+Project_Test/XV6_Tests/task1_10.s: Project_Test/XV6_Tests/task1_10.c.s
+
+.PHONY : Project_Test/XV6_Tests/task1_10.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task1_10.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_10.c.s
+.PHONY : Project_Test/XV6_Tests/task1_10.c.s
+
+Project_Test/XV6_Tests/task1_11.o: Project_Test/XV6_Tests/task1_11.c.o
+
+.PHONY : Project_Test/XV6_Tests/task1_11.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task1_11.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_11.c.o
+.PHONY : Project_Test/XV6_Tests/task1_11.c.o
+
+Project_Test/XV6_Tests/task1_11.i: Project_Test/XV6_Tests/task1_11.c.i
+
+.PHONY : Project_Test/XV6_Tests/task1_11.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task1_11.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_11.c.i
+.PHONY : Project_Test/XV6_Tests/task1_11.c.i
+
+Project_Test/XV6_Tests/task1_11.s: Project_Test/XV6_Tests/task1_11.c.s
+
+.PHONY : Project_Test/XV6_Tests/task1_11.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task1_11.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_11.c.s
+.PHONY : Project_Test/XV6_Tests/task1_11.c.s
+
+Project_Test/XV6_Tests/task1_12.o: Project_Test/XV6_Tests/task1_12.c.o
+
+.PHONY : Project_Test/XV6_Tests/task1_12.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task1_12.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_12.c.o
+.PHONY : Project_Test/XV6_Tests/task1_12.c.o
+
+Project_Test/XV6_Tests/task1_12.i: Project_Test/XV6_Tests/task1_12.c.i
+
+.PHONY : Project_Test/XV6_Tests/task1_12.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task1_12.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_12.c.i
+.PHONY : Project_Test/XV6_Tests/task1_12.c.i
+
+Project_Test/XV6_Tests/task1_12.s: Project_Test/XV6_Tests/task1_12.c.s
+
+.PHONY : Project_Test/XV6_Tests/task1_12.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task1_12.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_12.c.s
+.PHONY : Project_Test/XV6_Tests/task1_12.c.s
+
+Project_Test/XV6_Tests/task1_13.o: Project_Test/XV6_Tests/task1_13.c.o
+
+.PHONY : Project_Test/XV6_Tests/task1_13.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task1_13.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_13.c.o
+.PHONY : Project_Test/XV6_Tests/task1_13.c.o
+
+Project_Test/XV6_Tests/task1_13.i: Project_Test/XV6_Tests/task1_13.c.i
+
+.PHONY : Project_Test/XV6_Tests/task1_13.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task1_13.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_13.c.i
+.PHONY : Project_Test/XV6_Tests/task1_13.c.i
+
+Project_Test/XV6_Tests/task1_13.s: Project_Test/XV6_Tests/task1_13.c.s
+
+.PHONY : Project_Test/XV6_Tests/task1_13.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task1_13.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_13.c.s
+.PHONY : Project_Test/XV6_Tests/task1_13.c.s
+
+Project_Test/XV6_Tests/task1_14.o: Project_Test/XV6_Tests/task1_14.c.o
+
+.PHONY : Project_Test/XV6_Tests/task1_14.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task1_14.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_14.c.o
+.PHONY : Project_Test/XV6_Tests/task1_14.c.o
+
+Project_Test/XV6_Tests/task1_14.i: Project_Test/XV6_Tests/task1_14.c.i
+
+.PHONY : Project_Test/XV6_Tests/task1_14.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task1_14.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_14.c.i
+.PHONY : Project_Test/XV6_Tests/task1_14.c.i
+
+Project_Test/XV6_Tests/task1_14.s: Project_Test/XV6_Tests/task1_14.c.s
+
+.PHONY : Project_Test/XV6_Tests/task1_14.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task1_14.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_14.c.s
+.PHONY : Project_Test/XV6_Tests/task1_14.c.s
+
+Project_Test/XV6_Tests/task1_15.o: Project_Test/XV6_Tests/task1_15.c.o
+
+.PHONY : Project_Test/XV6_Tests/task1_15.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task1_15.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_15.c.o
+.PHONY : Project_Test/XV6_Tests/task1_15.c.o
+
+Project_Test/XV6_Tests/task1_15.i: Project_Test/XV6_Tests/task1_15.c.i
+
+.PHONY : Project_Test/XV6_Tests/task1_15.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task1_15.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_15.c.i
+.PHONY : Project_Test/XV6_Tests/task1_15.c.i
+
+Project_Test/XV6_Tests/task1_15.s: Project_Test/XV6_Tests/task1_15.c.s
+
+.PHONY : Project_Test/XV6_Tests/task1_15.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task1_15.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_15.c.s
+.PHONY : Project_Test/XV6_Tests/task1_15.c.s
+
+Project_Test/XV6_Tests/task1_16.o: Project_Test/XV6_Tests/task1_16.c.o
+
+.PHONY : Project_Test/XV6_Tests/task1_16.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task1_16.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_16.c.o
+.PHONY : Project_Test/XV6_Tests/task1_16.c.o
+
+Project_Test/XV6_Tests/task1_16.i: Project_Test/XV6_Tests/task1_16.c.i
+
+.PHONY : Project_Test/XV6_Tests/task1_16.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task1_16.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_16.c.i
+.PHONY : Project_Test/XV6_Tests/task1_16.c.i
+
+Project_Test/XV6_Tests/task1_16.s: Project_Test/XV6_Tests/task1_16.c.s
+
+.PHONY : Project_Test/XV6_Tests/task1_16.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task1_16.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_16.c.s
+.PHONY : Project_Test/XV6_Tests/task1_16.c.s
+
+Project_Test/XV6_Tests/task1_17.o: Project_Test/XV6_Tests/task1_17.c.o
+
+.PHONY : Project_Test/XV6_Tests/task1_17.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task1_17.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_17.c.o
+.PHONY : Project_Test/XV6_Tests/task1_17.c.o
+
+Project_Test/XV6_Tests/task1_17.i: Project_Test/XV6_Tests/task1_17.c.i
+
+.PHONY : Project_Test/XV6_Tests/task1_17.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task1_17.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_17.c.i
+.PHONY : Project_Test/XV6_Tests/task1_17.c.i
+
+Project_Test/XV6_Tests/task1_17.s: Project_Test/XV6_Tests/task1_17.c.s
+
+.PHONY : Project_Test/XV6_Tests/task1_17.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task1_17.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_17.c.s
+.PHONY : Project_Test/XV6_Tests/task1_17.c.s
+
+Project_Test/XV6_Tests/task1_18.o: Project_Test/XV6_Tests/task1_18.c.o
+
+.PHONY : Project_Test/XV6_Tests/task1_18.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task1_18.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_18.c.o
+.PHONY : Project_Test/XV6_Tests/task1_18.c.o
+
+Project_Test/XV6_Tests/task1_18.i: Project_Test/XV6_Tests/task1_18.c.i
+
+.PHONY : Project_Test/XV6_Tests/task1_18.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task1_18.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_18.c.i
+.PHONY : Project_Test/XV6_Tests/task1_18.c.i
+
+Project_Test/XV6_Tests/task1_18.s: Project_Test/XV6_Tests/task1_18.c.s
+
+.PHONY : Project_Test/XV6_Tests/task1_18.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task1_18.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_18.c.s
+.PHONY : Project_Test/XV6_Tests/task1_18.c.s
+
+Project_Test/XV6_Tests/task1_19.o: Project_Test/XV6_Tests/task1_19.c.o
+
+.PHONY : Project_Test/XV6_Tests/task1_19.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task1_19.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_19.c.o
+.PHONY : Project_Test/XV6_Tests/task1_19.c.o
+
+Project_Test/XV6_Tests/task1_19.i: Project_Test/XV6_Tests/task1_19.c.i
+
+.PHONY : Project_Test/XV6_Tests/task1_19.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task1_19.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_19.c.i
+.PHONY : Project_Test/XV6_Tests/task1_19.c.i
+
+Project_Test/XV6_Tests/task1_19.s: Project_Test/XV6_Tests/task1_19.c.s
+
+.PHONY : Project_Test/XV6_Tests/task1_19.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task1_19.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_19.c.s
+.PHONY : Project_Test/XV6_Tests/task1_19.c.s
+
+Project_Test/XV6_Tests/task1_2.o: Project_Test/XV6_Tests/task1_2.c.o
+
+.PHONY : Project_Test/XV6_Tests/task1_2.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task1_2.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_2.c.o
+.PHONY : Project_Test/XV6_Tests/task1_2.c.o
+
+Project_Test/XV6_Tests/task1_2.i: Project_Test/XV6_Tests/task1_2.c.i
+
+.PHONY : Project_Test/XV6_Tests/task1_2.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task1_2.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_2.c.i
+.PHONY : Project_Test/XV6_Tests/task1_2.c.i
+
+Project_Test/XV6_Tests/task1_2.s: Project_Test/XV6_Tests/task1_2.c.s
+
+.PHONY : Project_Test/XV6_Tests/task1_2.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task1_2.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_2.c.s
+.PHONY : Project_Test/XV6_Tests/task1_2.c.s
+
+Project_Test/XV6_Tests/task1_20.o: Project_Test/XV6_Tests/task1_20.c.o
+
+.PHONY : Project_Test/XV6_Tests/task1_20.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task1_20.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_20.c.o
+.PHONY : Project_Test/XV6_Tests/task1_20.c.o
+
+Project_Test/XV6_Tests/task1_20.i: Project_Test/XV6_Tests/task1_20.c.i
+
+.PHONY : Project_Test/XV6_Tests/task1_20.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task1_20.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_20.c.i
+.PHONY : Project_Test/XV6_Tests/task1_20.c.i
+
+Project_Test/XV6_Tests/task1_20.s: Project_Test/XV6_Tests/task1_20.c.s
+
+.PHONY : Project_Test/XV6_Tests/task1_20.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task1_20.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_20.c.s
+.PHONY : Project_Test/XV6_Tests/task1_20.c.s
+
+Project_Test/XV6_Tests/task1_21.o: Project_Test/XV6_Tests/task1_21.c.o
+
+.PHONY : Project_Test/XV6_Tests/task1_21.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task1_21.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_21.c.o
+.PHONY : Project_Test/XV6_Tests/task1_21.c.o
+
+Project_Test/XV6_Tests/task1_21.i: Project_Test/XV6_Tests/task1_21.c.i
+
+.PHONY : Project_Test/XV6_Tests/task1_21.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task1_21.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_21.c.i
+.PHONY : Project_Test/XV6_Tests/task1_21.c.i
+
+Project_Test/XV6_Tests/task1_21.s: Project_Test/XV6_Tests/task1_21.c.s
+
+.PHONY : Project_Test/XV6_Tests/task1_21.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task1_21.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_21.c.s
+.PHONY : Project_Test/XV6_Tests/task1_21.c.s
+
+Project_Test/XV6_Tests/task1_22.o: Project_Test/XV6_Tests/task1_22.c.o
+
+.PHONY : Project_Test/XV6_Tests/task1_22.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task1_22.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_22.c.o
+.PHONY : Project_Test/XV6_Tests/task1_22.c.o
+
+Project_Test/XV6_Tests/task1_22.i: Project_Test/XV6_Tests/task1_22.c.i
+
+.PHONY : Project_Test/XV6_Tests/task1_22.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task1_22.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_22.c.i
+.PHONY : Project_Test/XV6_Tests/task1_22.c.i
+
+Project_Test/XV6_Tests/task1_22.s: Project_Test/XV6_Tests/task1_22.c.s
+
+.PHONY : Project_Test/XV6_Tests/task1_22.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task1_22.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_22.c.s
+.PHONY : Project_Test/XV6_Tests/task1_22.c.s
+
+Project_Test/XV6_Tests/task1_3.o: Project_Test/XV6_Tests/task1_3.c.o
+
+.PHONY : Project_Test/XV6_Tests/task1_3.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task1_3.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_3.c.o
+.PHONY : Project_Test/XV6_Tests/task1_3.c.o
+
+Project_Test/XV6_Tests/task1_3.i: Project_Test/XV6_Tests/task1_3.c.i
+
+.PHONY : Project_Test/XV6_Tests/task1_3.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task1_3.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_3.c.i
+.PHONY : Project_Test/XV6_Tests/task1_3.c.i
+
+Project_Test/XV6_Tests/task1_3.s: Project_Test/XV6_Tests/task1_3.c.s
+
+.PHONY : Project_Test/XV6_Tests/task1_3.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task1_3.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_3.c.s
+.PHONY : Project_Test/XV6_Tests/task1_3.c.s
+
+Project_Test/XV6_Tests/task1_4.o: Project_Test/XV6_Tests/task1_4.c.o
+
+.PHONY : Project_Test/XV6_Tests/task1_4.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task1_4.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_4.c.o
+.PHONY : Project_Test/XV6_Tests/task1_4.c.o
+
+Project_Test/XV6_Tests/task1_4.i: Project_Test/XV6_Tests/task1_4.c.i
+
+.PHONY : Project_Test/XV6_Tests/task1_4.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task1_4.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_4.c.i
+.PHONY : Project_Test/XV6_Tests/task1_4.c.i
+
+Project_Test/XV6_Tests/task1_4.s: Project_Test/XV6_Tests/task1_4.c.s
+
+.PHONY : Project_Test/XV6_Tests/task1_4.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task1_4.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_4.c.s
+.PHONY : Project_Test/XV6_Tests/task1_4.c.s
+
+Project_Test/XV6_Tests/task1_5.o: Project_Test/XV6_Tests/task1_5.c.o
+
+.PHONY : Project_Test/XV6_Tests/task1_5.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task1_5.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_5.c.o
+.PHONY : Project_Test/XV6_Tests/task1_5.c.o
+
+Project_Test/XV6_Tests/task1_5.i: Project_Test/XV6_Tests/task1_5.c.i
+
+.PHONY : Project_Test/XV6_Tests/task1_5.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task1_5.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_5.c.i
+.PHONY : Project_Test/XV6_Tests/task1_5.c.i
+
+Project_Test/XV6_Tests/task1_5.s: Project_Test/XV6_Tests/task1_5.c.s
+
+.PHONY : Project_Test/XV6_Tests/task1_5.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task1_5.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_5.c.s
+.PHONY : Project_Test/XV6_Tests/task1_5.c.s
+
+Project_Test/XV6_Tests/task1_6.o: Project_Test/XV6_Tests/task1_6.c.o
+
+.PHONY : Project_Test/XV6_Tests/task1_6.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task1_6.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_6.c.o
+.PHONY : Project_Test/XV6_Tests/task1_6.c.o
+
+Project_Test/XV6_Tests/task1_6.i: Project_Test/XV6_Tests/task1_6.c.i
+
+.PHONY : Project_Test/XV6_Tests/task1_6.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task1_6.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_6.c.i
+.PHONY : Project_Test/XV6_Tests/task1_6.c.i
+
+Project_Test/XV6_Tests/task1_6.s: Project_Test/XV6_Tests/task1_6.c.s
+
+.PHONY : Project_Test/XV6_Tests/task1_6.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task1_6.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_6.c.s
+.PHONY : Project_Test/XV6_Tests/task1_6.c.s
+
+Project_Test/XV6_Tests/task1_7.o: Project_Test/XV6_Tests/task1_7.c.o
+
+.PHONY : Project_Test/XV6_Tests/task1_7.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task1_7.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_7.c.o
+.PHONY : Project_Test/XV6_Tests/task1_7.c.o
+
+Project_Test/XV6_Tests/task1_7.i: Project_Test/XV6_Tests/task1_7.c.i
+
+.PHONY : Project_Test/XV6_Tests/task1_7.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task1_7.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_7.c.i
+.PHONY : Project_Test/XV6_Tests/task1_7.c.i
+
+Project_Test/XV6_Tests/task1_7.s: Project_Test/XV6_Tests/task1_7.c.s
+
+.PHONY : Project_Test/XV6_Tests/task1_7.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task1_7.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_7.c.s
+.PHONY : Project_Test/XV6_Tests/task1_7.c.s
+
+Project_Test/XV6_Tests/task1_8.o: Project_Test/XV6_Tests/task1_8.c.o
+
+.PHONY : Project_Test/XV6_Tests/task1_8.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task1_8.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_8.c.o
+.PHONY : Project_Test/XV6_Tests/task1_8.c.o
+
+Project_Test/XV6_Tests/task1_8.i: Project_Test/XV6_Tests/task1_8.c.i
+
+.PHONY : Project_Test/XV6_Tests/task1_8.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task1_8.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_8.c.i
+.PHONY : Project_Test/XV6_Tests/task1_8.c.i
+
+Project_Test/XV6_Tests/task1_8.s: Project_Test/XV6_Tests/task1_8.c.s
+
+.PHONY : Project_Test/XV6_Tests/task1_8.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task1_8.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_8.c.s
+.PHONY : Project_Test/XV6_Tests/task1_8.c.s
+
+Project_Test/XV6_Tests/task1_9.o: Project_Test/XV6_Tests/task1_9.c.o
+
+.PHONY : Project_Test/XV6_Tests/task1_9.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task1_9.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_9.c.o
+.PHONY : Project_Test/XV6_Tests/task1_9.c.o
+
+Project_Test/XV6_Tests/task1_9.i: Project_Test/XV6_Tests/task1_9.c.i
+
+.PHONY : Project_Test/XV6_Tests/task1_9.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task1_9.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_9.c.i
+.PHONY : Project_Test/XV6_Tests/task1_9.c.i
+
+Project_Test/XV6_Tests/task1_9.s: Project_Test/XV6_Tests/task1_9.c.s
+
+.PHONY : Project_Test/XV6_Tests/task1_9.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task1_9.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_9.c.s
+.PHONY : Project_Test/XV6_Tests/task1_9.c.s
+
+Project_Test/XV6_Tests/task2_1.o: Project_Test/XV6_Tests/task2_1.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_1.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_1.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_1.c.o
+.PHONY : Project_Test/XV6_Tests/task2_1.c.o
+
+Project_Test/XV6_Tests/task2_1.i: Project_Test/XV6_Tests/task2_1.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_1.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_1.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_1.c.i
+.PHONY : Project_Test/XV6_Tests/task2_1.c.i
+
+Project_Test/XV6_Tests/task2_1.s: Project_Test/XV6_Tests/task2_1.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_1.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_1.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_1.c.s
+.PHONY : Project_Test/XV6_Tests/task2_1.c.s
+
+Project_Test/XV6_Tests/task2_10.o: Project_Test/XV6_Tests/task2_10.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_10.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_10.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_10.c.o
+.PHONY : Project_Test/XV6_Tests/task2_10.c.o
+
+Project_Test/XV6_Tests/task2_10.i: Project_Test/XV6_Tests/task2_10.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_10.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_10.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_10.c.i
+.PHONY : Project_Test/XV6_Tests/task2_10.c.i
+
+Project_Test/XV6_Tests/task2_10.s: Project_Test/XV6_Tests/task2_10.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_10.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_10.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_10.c.s
+.PHONY : Project_Test/XV6_Tests/task2_10.c.s
+
+Project_Test/XV6_Tests/task2_11.o: Project_Test/XV6_Tests/task2_11.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_11.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_11.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_11.c.o
+.PHONY : Project_Test/XV6_Tests/task2_11.c.o
+
+Project_Test/XV6_Tests/task2_11.i: Project_Test/XV6_Tests/task2_11.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_11.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_11.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_11.c.i
+.PHONY : Project_Test/XV6_Tests/task2_11.c.i
+
+Project_Test/XV6_Tests/task2_11.s: Project_Test/XV6_Tests/task2_11.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_11.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_11.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_11.c.s
+.PHONY : Project_Test/XV6_Tests/task2_11.c.s
+
+Project_Test/XV6_Tests/task2_12.o: Project_Test/XV6_Tests/task2_12.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_12.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_12.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_12.c.o
+.PHONY : Project_Test/XV6_Tests/task2_12.c.o
+
+Project_Test/XV6_Tests/task2_12.i: Project_Test/XV6_Tests/task2_12.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_12.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_12.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_12.c.i
+.PHONY : Project_Test/XV6_Tests/task2_12.c.i
+
+Project_Test/XV6_Tests/task2_12.s: Project_Test/XV6_Tests/task2_12.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_12.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_12.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_12.c.s
+.PHONY : Project_Test/XV6_Tests/task2_12.c.s
+
+Project_Test/XV6_Tests/task2_13.o: Project_Test/XV6_Tests/task2_13.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_13.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_13.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_13.c.o
+.PHONY : Project_Test/XV6_Tests/task2_13.c.o
+
+Project_Test/XV6_Tests/task2_13.i: Project_Test/XV6_Tests/task2_13.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_13.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_13.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_13.c.i
+.PHONY : Project_Test/XV6_Tests/task2_13.c.i
+
+Project_Test/XV6_Tests/task2_13.s: Project_Test/XV6_Tests/task2_13.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_13.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_13.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_13.c.s
+.PHONY : Project_Test/XV6_Tests/task2_13.c.s
+
+Project_Test/XV6_Tests/task2_14.o: Project_Test/XV6_Tests/task2_14.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_14.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_14.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_14.c.o
+.PHONY : Project_Test/XV6_Tests/task2_14.c.o
+
+Project_Test/XV6_Tests/task2_14.i: Project_Test/XV6_Tests/task2_14.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_14.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_14.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_14.c.i
+.PHONY : Project_Test/XV6_Tests/task2_14.c.i
+
+Project_Test/XV6_Tests/task2_14.s: Project_Test/XV6_Tests/task2_14.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_14.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_14.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_14.c.s
+.PHONY : Project_Test/XV6_Tests/task2_14.c.s
+
+Project_Test/XV6_Tests/task2_15.o: Project_Test/XV6_Tests/task2_15.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_15.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_15.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_15.c.o
+.PHONY : Project_Test/XV6_Tests/task2_15.c.o
+
+Project_Test/XV6_Tests/task2_15.i: Project_Test/XV6_Tests/task2_15.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_15.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_15.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_15.c.i
+.PHONY : Project_Test/XV6_Tests/task2_15.c.i
+
+Project_Test/XV6_Tests/task2_15.s: Project_Test/XV6_Tests/task2_15.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_15.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_15.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_15.c.s
+.PHONY : Project_Test/XV6_Tests/task2_15.c.s
+
+Project_Test/XV6_Tests/task2_16.o: Project_Test/XV6_Tests/task2_16.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_16.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_16.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_16.c.o
+.PHONY : Project_Test/XV6_Tests/task2_16.c.o
+
+Project_Test/XV6_Tests/task2_16.i: Project_Test/XV6_Tests/task2_16.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_16.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_16.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_16.c.i
+.PHONY : Project_Test/XV6_Tests/task2_16.c.i
+
+Project_Test/XV6_Tests/task2_16.s: Project_Test/XV6_Tests/task2_16.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_16.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_16.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_16.c.s
+.PHONY : Project_Test/XV6_Tests/task2_16.c.s
+
+Project_Test/XV6_Tests/task2_17.o: Project_Test/XV6_Tests/task2_17.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_17.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_17.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_17.c.o
+.PHONY : Project_Test/XV6_Tests/task2_17.c.o
+
+Project_Test/XV6_Tests/task2_17.i: Project_Test/XV6_Tests/task2_17.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_17.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_17.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_17.c.i
+.PHONY : Project_Test/XV6_Tests/task2_17.c.i
+
+Project_Test/XV6_Tests/task2_17.s: Project_Test/XV6_Tests/task2_17.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_17.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_17.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_17.c.s
+.PHONY : Project_Test/XV6_Tests/task2_17.c.s
+
+Project_Test/XV6_Tests/task2_18.o: Project_Test/XV6_Tests/task2_18.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_18.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_18.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_18.c.o
+.PHONY : Project_Test/XV6_Tests/task2_18.c.o
+
+Project_Test/XV6_Tests/task2_18.i: Project_Test/XV6_Tests/task2_18.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_18.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_18.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_18.c.i
+.PHONY : Project_Test/XV6_Tests/task2_18.c.i
+
+Project_Test/XV6_Tests/task2_18.s: Project_Test/XV6_Tests/task2_18.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_18.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_18.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_18.c.s
+.PHONY : Project_Test/XV6_Tests/task2_18.c.s
+
+Project_Test/XV6_Tests/task2_19.o: Project_Test/XV6_Tests/task2_19.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_19.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_19.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_19.c.o
+.PHONY : Project_Test/XV6_Tests/task2_19.c.o
+
+Project_Test/XV6_Tests/task2_19.i: Project_Test/XV6_Tests/task2_19.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_19.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_19.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_19.c.i
+.PHONY : Project_Test/XV6_Tests/task2_19.c.i
+
+Project_Test/XV6_Tests/task2_19.s: Project_Test/XV6_Tests/task2_19.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_19.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_19.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_19.c.s
+.PHONY : Project_Test/XV6_Tests/task2_19.c.s
+
+Project_Test/XV6_Tests/task2_2.o: Project_Test/XV6_Tests/task2_2.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_2.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_2.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_2.c.o
+.PHONY : Project_Test/XV6_Tests/task2_2.c.o
+
+Project_Test/XV6_Tests/task2_2.i: Project_Test/XV6_Tests/task2_2.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_2.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_2.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_2.c.i
+.PHONY : Project_Test/XV6_Tests/task2_2.c.i
+
+Project_Test/XV6_Tests/task2_2.s: Project_Test/XV6_Tests/task2_2.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_2.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_2.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_2.c.s
+.PHONY : Project_Test/XV6_Tests/task2_2.c.s
+
+Project_Test/XV6_Tests/task2_20.o: Project_Test/XV6_Tests/task2_20.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_20.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_20.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_20.c.o
+.PHONY : Project_Test/XV6_Tests/task2_20.c.o
+
+Project_Test/XV6_Tests/task2_20.i: Project_Test/XV6_Tests/task2_20.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_20.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_20.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_20.c.i
+.PHONY : Project_Test/XV6_Tests/task2_20.c.i
+
+Project_Test/XV6_Tests/task2_20.s: Project_Test/XV6_Tests/task2_20.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_20.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_20.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_20.c.s
+.PHONY : Project_Test/XV6_Tests/task2_20.c.s
+
+Project_Test/XV6_Tests/task2_21.o: Project_Test/XV6_Tests/task2_21.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_21.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_21.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_21.c.o
+.PHONY : Project_Test/XV6_Tests/task2_21.c.o
+
+Project_Test/XV6_Tests/task2_21.i: Project_Test/XV6_Tests/task2_21.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_21.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_21.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_21.c.i
+.PHONY : Project_Test/XV6_Tests/task2_21.c.i
+
+Project_Test/XV6_Tests/task2_21.s: Project_Test/XV6_Tests/task2_21.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_21.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_21.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_21.c.s
+.PHONY : Project_Test/XV6_Tests/task2_21.c.s
+
+Project_Test/XV6_Tests/task2_22.o: Project_Test/XV6_Tests/task2_22.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_22.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_22.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_22.c.o
+.PHONY : Project_Test/XV6_Tests/task2_22.c.o
+
+Project_Test/XV6_Tests/task2_22.i: Project_Test/XV6_Tests/task2_22.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_22.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_22.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_22.c.i
+.PHONY : Project_Test/XV6_Tests/task2_22.c.i
+
+Project_Test/XV6_Tests/task2_22.s: Project_Test/XV6_Tests/task2_22.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_22.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_22.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_22.c.s
+.PHONY : Project_Test/XV6_Tests/task2_22.c.s
+
+Project_Test/XV6_Tests/task2_23.o: Project_Test/XV6_Tests/task2_23.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_23.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_23.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_23.c.o
+.PHONY : Project_Test/XV6_Tests/task2_23.c.o
+
+Project_Test/XV6_Tests/task2_23.i: Project_Test/XV6_Tests/task2_23.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_23.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_23.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_23.c.i
+.PHONY : Project_Test/XV6_Tests/task2_23.c.i
+
+Project_Test/XV6_Tests/task2_23.s: Project_Test/XV6_Tests/task2_23.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_23.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_23.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_23.c.s
+.PHONY : Project_Test/XV6_Tests/task2_23.c.s
+
+Project_Test/XV6_Tests/task2_24.o: Project_Test/XV6_Tests/task2_24.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_24.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_24.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_24.c.o
+.PHONY : Project_Test/XV6_Tests/task2_24.c.o
+
+Project_Test/XV6_Tests/task2_24.i: Project_Test/XV6_Tests/task2_24.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_24.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_24.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_24.c.i
+.PHONY : Project_Test/XV6_Tests/task2_24.c.i
+
+Project_Test/XV6_Tests/task2_24.s: Project_Test/XV6_Tests/task2_24.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_24.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_24.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_24.c.s
+.PHONY : Project_Test/XV6_Tests/task2_24.c.s
+
+Project_Test/XV6_Tests/task2_25.o: Project_Test/XV6_Tests/task2_25.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_25.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_25.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_25.c.o
+.PHONY : Project_Test/XV6_Tests/task2_25.c.o
+
+Project_Test/XV6_Tests/task2_25.i: Project_Test/XV6_Tests/task2_25.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_25.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_25.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_25.c.i
+.PHONY : Project_Test/XV6_Tests/task2_25.c.i
+
+Project_Test/XV6_Tests/task2_25.s: Project_Test/XV6_Tests/task2_25.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_25.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_25.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_25.c.s
+.PHONY : Project_Test/XV6_Tests/task2_25.c.s
+
+Project_Test/XV6_Tests/task2_26.o: Project_Test/XV6_Tests/task2_26.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_26.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_26.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_26.c.o
+.PHONY : Project_Test/XV6_Tests/task2_26.c.o
+
+Project_Test/XV6_Tests/task2_26.i: Project_Test/XV6_Tests/task2_26.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_26.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_26.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_26.c.i
+.PHONY : Project_Test/XV6_Tests/task2_26.c.i
+
+Project_Test/XV6_Tests/task2_26.s: Project_Test/XV6_Tests/task2_26.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_26.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_26.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_26.c.s
+.PHONY : Project_Test/XV6_Tests/task2_26.c.s
+
+Project_Test/XV6_Tests/task2_27.o: Project_Test/XV6_Tests/task2_27.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_27.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_27.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_27.c.o
+.PHONY : Project_Test/XV6_Tests/task2_27.c.o
+
+Project_Test/XV6_Tests/task2_27.i: Project_Test/XV6_Tests/task2_27.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_27.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_27.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_27.c.i
+.PHONY : Project_Test/XV6_Tests/task2_27.c.i
+
+Project_Test/XV6_Tests/task2_27.s: Project_Test/XV6_Tests/task2_27.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_27.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_27.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_27.c.s
+.PHONY : Project_Test/XV6_Tests/task2_27.c.s
+
+Project_Test/XV6_Tests/task2_28.o: Project_Test/XV6_Tests/task2_28.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_28.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_28.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_28.c.o
+.PHONY : Project_Test/XV6_Tests/task2_28.c.o
+
+Project_Test/XV6_Tests/task2_28.i: Project_Test/XV6_Tests/task2_28.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_28.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_28.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_28.c.i
+.PHONY : Project_Test/XV6_Tests/task2_28.c.i
+
+Project_Test/XV6_Tests/task2_28.s: Project_Test/XV6_Tests/task2_28.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_28.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_28.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_28.c.s
+.PHONY : Project_Test/XV6_Tests/task2_28.c.s
+
+Project_Test/XV6_Tests/task2_29.o: Project_Test/XV6_Tests/task2_29.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_29.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_29.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_29.c.o
+.PHONY : Project_Test/XV6_Tests/task2_29.c.o
+
+Project_Test/XV6_Tests/task2_29.i: Project_Test/XV6_Tests/task2_29.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_29.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_29.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_29.c.i
+.PHONY : Project_Test/XV6_Tests/task2_29.c.i
+
+Project_Test/XV6_Tests/task2_29.s: Project_Test/XV6_Tests/task2_29.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_29.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_29.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_29.c.s
+.PHONY : Project_Test/XV6_Tests/task2_29.c.s
+
+Project_Test/XV6_Tests/task2_3.o: Project_Test/XV6_Tests/task2_3.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_3.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_3.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_3.c.o
+.PHONY : Project_Test/XV6_Tests/task2_3.c.o
+
+Project_Test/XV6_Tests/task2_3.i: Project_Test/XV6_Tests/task2_3.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_3.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_3.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_3.c.i
+.PHONY : Project_Test/XV6_Tests/task2_3.c.i
+
+Project_Test/XV6_Tests/task2_3.s: Project_Test/XV6_Tests/task2_3.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_3.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_3.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_3.c.s
+.PHONY : Project_Test/XV6_Tests/task2_3.c.s
+
+Project_Test/XV6_Tests/task2_4.o: Project_Test/XV6_Tests/task2_4.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_4.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_4.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_4.c.o
+.PHONY : Project_Test/XV6_Tests/task2_4.c.o
+
+Project_Test/XV6_Tests/task2_4.i: Project_Test/XV6_Tests/task2_4.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_4.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_4.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_4.c.i
+.PHONY : Project_Test/XV6_Tests/task2_4.c.i
+
+Project_Test/XV6_Tests/task2_4.s: Project_Test/XV6_Tests/task2_4.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_4.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_4.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_4.c.s
+.PHONY : Project_Test/XV6_Tests/task2_4.c.s
+
+Project_Test/XV6_Tests/task2_5.o: Project_Test/XV6_Tests/task2_5.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_5.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_5.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_5.c.o
+.PHONY : Project_Test/XV6_Tests/task2_5.c.o
+
+Project_Test/XV6_Tests/task2_5.i: Project_Test/XV6_Tests/task2_5.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_5.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_5.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_5.c.i
+.PHONY : Project_Test/XV6_Tests/task2_5.c.i
+
+Project_Test/XV6_Tests/task2_5.s: Project_Test/XV6_Tests/task2_5.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_5.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_5.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_5.c.s
+.PHONY : Project_Test/XV6_Tests/task2_5.c.s
+
+Project_Test/XV6_Tests/task2_6.o: Project_Test/XV6_Tests/task2_6.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_6.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_6.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_6.c.o
+.PHONY : Project_Test/XV6_Tests/task2_6.c.o
+
+Project_Test/XV6_Tests/task2_6.i: Project_Test/XV6_Tests/task2_6.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_6.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_6.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_6.c.i
+.PHONY : Project_Test/XV6_Tests/task2_6.c.i
+
+Project_Test/XV6_Tests/task2_6.s: Project_Test/XV6_Tests/task2_6.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_6.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_6.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_6.c.s
+.PHONY : Project_Test/XV6_Tests/task2_6.c.s
+
+Project_Test/XV6_Tests/task2_7.o: Project_Test/XV6_Tests/task2_7.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_7.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_7.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_7.c.o
+.PHONY : Project_Test/XV6_Tests/task2_7.c.o
+
+Project_Test/XV6_Tests/task2_7.i: Project_Test/XV6_Tests/task2_7.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_7.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_7.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_7.c.i
+.PHONY : Project_Test/XV6_Tests/task2_7.c.i
+
+Project_Test/XV6_Tests/task2_7.s: Project_Test/XV6_Tests/task2_7.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_7.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_7.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_7.c.s
+.PHONY : Project_Test/XV6_Tests/task2_7.c.s
+
+Project_Test/XV6_Tests/task2_8.o: Project_Test/XV6_Tests/task2_8.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_8.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_8.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_8.c.o
+.PHONY : Project_Test/XV6_Tests/task2_8.c.o
+
+Project_Test/XV6_Tests/task2_8.i: Project_Test/XV6_Tests/task2_8.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_8.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_8.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_8.c.i
+.PHONY : Project_Test/XV6_Tests/task2_8.c.i
+
+Project_Test/XV6_Tests/task2_8.s: Project_Test/XV6_Tests/task2_8.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_8.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_8.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_8.c.s
+.PHONY : Project_Test/XV6_Tests/task2_8.c.s
+
+Project_Test/XV6_Tests/task2_9.o: Project_Test/XV6_Tests/task2_9.c.o
+
+.PHONY : Project_Test/XV6_Tests/task2_9.o
+
+# target to build an object file
+Project_Test/XV6_Tests/task2_9.c.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_9.c.o
+.PHONY : Project_Test/XV6_Tests/task2_9.c.o
+
+Project_Test/XV6_Tests/task2_9.i: Project_Test/XV6_Tests/task2_9.c.i
+
+.PHONY : Project_Test/XV6_Tests/task2_9.i
+
+# target to preprocess a source file
+Project_Test/XV6_Tests/task2_9.c.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_9.c.i
+.PHONY : Project_Test/XV6_Tests/task2_9.c.i
+
+Project_Test/XV6_Tests/task2_9.s: Project_Test/XV6_Tests/task2_9.c.s
+
+.PHONY : Project_Test/XV6_Tests/task2_9.s
+
+# target to generate assembly for a file
+Project_Test/XV6_Tests/task2_9.c.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_9.c.s
+.PHONY : Project_Test/XV6_Tests/task2_9.c.s
+
+Project_Test/src/ProjectTest.o: Project_Test/src/ProjectTest.cpp.o
+
+.PHONY : Project_Test/src/ProjectTest.o
+
+# target to build an object file
+Project_Test/src/ProjectTest.cpp.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/src/ProjectTest.cpp.o
+.PHONY : Project_Test/src/ProjectTest.cpp.o
+
+Project_Test/src/ProjectTest.i: Project_Test/src/ProjectTest.cpp.i
+
+.PHONY : Project_Test/src/ProjectTest.i
+
+# target to preprocess a source file
+Project_Test/src/ProjectTest.cpp.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/src/ProjectTest.cpp.i
+.PHONY : Project_Test/src/ProjectTest.cpp.i
+
+Project_Test/src/ProjectTest.s: Project_Test/src/ProjectTest.cpp.s
+
+.PHONY : Project_Test/src/ProjectTest.s
+
+# target to generate assembly for a file
+Project_Test/src/ProjectTest.cpp.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/src/ProjectTest.cpp.s
+.PHONY : Project_Test/src/ProjectTest.cpp.s
+
+Project_Test/src/SubTests.o: Project_Test/src/SubTests.cpp.o
+
+.PHONY : Project_Test/src/SubTests.o
+
+# target to build an object file
+Project_Test/src/SubTests.cpp.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/src/SubTests.cpp.o
+.PHONY : Project_Test/src/SubTests.cpp.o
+
+Project_Test/src/SubTests.i: Project_Test/src/SubTests.cpp.i
+
+.PHONY : Project_Test/src/SubTests.i
+
+# target to preprocess a source file
+Project_Test/src/SubTests.cpp.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/src/SubTests.cpp.i
+.PHONY : Project_Test/src/SubTests.cpp.i
+
+Project_Test/src/SubTests.s: Project_Test/src/SubTests.cpp.s
+
+.PHONY : Project_Test/src/SubTests.s
+
+# target to generate assembly for a file
+Project_Test/src/SubTests.cpp.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/src/SubTests.cpp.s
+.PHONY : Project_Test/src/SubTests.cpp.s
+
+Project_Test/src/Tests.o: Project_Test/src/Tests.cpp.o
+
+.PHONY : Project_Test/src/Tests.o
+
+# target to build an object file
+Project_Test/src/Tests.cpp.o:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/src/Tests.cpp.o
+.PHONY : Project_Test/src/Tests.cpp.o
+
+Project_Test/src/Tests.i: Project_Test/src/Tests.cpp.i
+
+.PHONY : Project_Test/src/Tests.i
+
+# target to preprocess a source file
+Project_Test/src/Tests.cpp.i:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/src/Tests.cpp.i
+.PHONY : Project_Test/src/Tests.cpp.i
+
+Project_Test/src/Tests.s: Project_Test/src/Tests.cpp.s
+
+.PHONY : Project_Test/src/Tests.s
+
+# target to generate assembly for a file
+Project_Test/src/Tests.cpp.s:
+	$(MAKE) -f CMakeFiles/os192_Assignment3.dir/build.make CMakeFiles/os192_Assignment3.dir/Project_Test/src/Tests.cpp.s
+.PHONY : Project_Test/src/Tests.cpp.s
+
 bio.o: bio.c.o
 
 .PHONY : bio.o
@@ -1401,6 +2967,180 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... os192_Assignment3"
 	@echo "... edit_cache"
+	@echo "... Project_Test/XV6_Tests/OforktestO.o"
+	@echo "... Project_Test/XV6_Tests/OforktestO.i"
+	@echo "... Project_Test/XV6_Tests/OforktestO.s"
+	@echo "... Project_Test/XV6_Tests/OusertestsO.o"
+	@echo "... Project_Test/XV6_Tests/OusertestsO.i"
+	@echo "... Project_Test/XV6_Tests/OusertestsO.s"
+	@echo "... Project_Test/XV6_Tests/Ousertests_pagingO.o"
+	@echo "... Project_Test/XV6_Tests/Ousertests_pagingO.i"
+	@echo "... Project_Test/XV6_Tests/Ousertests_pagingO.s"
+	@echo "... Project_Test/XV6_Tests/quitXV6.o"
+	@echo "... Project_Test/XV6_Tests/quitXV6.i"
+	@echo "... Project_Test/XV6_Tests/quitXV6.s"
+	@echo "... Project_Test/XV6_Tests/task1_1.o"
+	@echo "... Project_Test/XV6_Tests/task1_1.i"
+	@echo "... Project_Test/XV6_Tests/task1_1.s"
+	@echo "... Project_Test/XV6_Tests/task1_10.o"
+	@echo "... Project_Test/XV6_Tests/task1_10.i"
+	@echo "... Project_Test/XV6_Tests/task1_10.s"
+	@echo "... Project_Test/XV6_Tests/task1_11.o"
+	@echo "... Project_Test/XV6_Tests/task1_11.i"
+	@echo "... Project_Test/XV6_Tests/task1_11.s"
+	@echo "... Project_Test/XV6_Tests/task1_12.o"
+	@echo "... Project_Test/XV6_Tests/task1_12.i"
+	@echo "... Project_Test/XV6_Tests/task1_12.s"
+	@echo "... Project_Test/XV6_Tests/task1_13.o"
+	@echo "... Project_Test/XV6_Tests/task1_13.i"
+	@echo "... Project_Test/XV6_Tests/task1_13.s"
+	@echo "... Project_Test/XV6_Tests/task1_14.o"
+	@echo "... Project_Test/XV6_Tests/task1_14.i"
+	@echo "... Project_Test/XV6_Tests/task1_14.s"
+	@echo "... Project_Test/XV6_Tests/task1_15.o"
+	@echo "... Project_Test/XV6_Tests/task1_15.i"
+	@echo "... Project_Test/XV6_Tests/task1_15.s"
+	@echo "... Project_Test/XV6_Tests/task1_16.o"
+	@echo "... Project_Test/XV6_Tests/task1_16.i"
+	@echo "... Project_Test/XV6_Tests/task1_16.s"
+	@echo "... Project_Test/XV6_Tests/task1_17.o"
+	@echo "... Project_Test/XV6_Tests/task1_17.i"
+	@echo "... Project_Test/XV6_Tests/task1_17.s"
+	@echo "... Project_Test/XV6_Tests/task1_18.o"
+	@echo "... Project_Test/XV6_Tests/task1_18.i"
+	@echo "... Project_Test/XV6_Tests/task1_18.s"
+	@echo "... Project_Test/XV6_Tests/task1_19.o"
+	@echo "... Project_Test/XV6_Tests/task1_19.i"
+	@echo "... Project_Test/XV6_Tests/task1_19.s"
+	@echo "... Project_Test/XV6_Tests/task1_2.o"
+	@echo "... Project_Test/XV6_Tests/task1_2.i"
+	@echo "... Project_Test/XV6_Tests/task1_2.s"
+	@echo "... Project_Test/XV6_Tests/task1_20.o"
+	@echo "... Project_Test/XV6_Tests/task1_20.i"
+	@echo "... Project_Test/XV6_Tests/task1_20.s"
+	@echo "... Project_Test/XV6_Tests/task1_21.o"
+	@echo "... Project_Test/XV6_Tests/task1_21.i"
+	@echo "... Project_Test/XV6_Tests/task1_21.s"
+	@echo "... Project_Test/XV6_Tests/task1_22.o"
+	@echo "... Project_Test/XV6_Tests/task1_22.i"
+	@echo "... Project_Test/XV6_Tests/task1_22.s"
+	@echo "... Project_Test/XV6_Tests/task1_3.o"
+	@echo "... Project_Test/XV6_Tests/task1_3.i"
+	@echo "... Project_Test/XV6_Tests/task1_3.s"
+	@echo "... Project_Test/XV6_Tests/task1_4.o"
+	@echo "... Project_Test/XV6_Tests/task1_4.i"
+	@echo "... Project_Test/XV6_Tests/task1_4.s"
+	@echo "... Project_Test/XV6_Tests/task1_5.o"
+	@echo "... Project_Test/XV6_Tests/task1_5.i"
+	@echo "... Project_Test/XV6_Tests/task1_5.s"
+	@echo "... Project_Test/XV6_Tests/task1_6.o"
+	@echo "... Project_Test/XV6_Tests/task1_6.i"
+	@echo "... Project_Test/XV6_Tests/task1_6.s"
+	@echo "... Project_Test/XV6_Tests/task1_7.o"
+	@echo "... Project_Test/XV6_Tests/task1_7.i"
+	@echo "... Project_Test/XV6_Tests/task1_7.s"
+	@echo "... Project_Test/XV6_Tests/task1_8.o"
+	@echo "... Project_Test/XV6_Tests/task1_8.i"
+	@echo "... Project_Test/XV6_Tests/task1_8.s"
+	@echo "... Project_Test/XV6_Tests/task1_9.o"
+	@echo "... Project_Test/XV6_Tests/task1_9.i"
+	@echo "... Project_Test/XV6_Tests/task1_9.s"
+	@echo "... Project_Test/XV6_Tests/task2_1.o"
+	@echo "... Project_Test/XV6_Tests/task2_1.i"
+	@echo "... Project_Test/XV6_Tests/task2_1.s"
+	@echo "... Project_Test/XV6_Tests/task2_10.o"
+	@echo "... Project_Test/XV6_Tests/task2_10.i"
+	@echo "... Project_Test/XV6_Tests/task2_10.s"
+	@echo "... Project_Test/XV6_Tests/task2_11.o"
+	@echo "... Project_Test/XV6_Tests/task2_11.i"
+	@echo "... Project_Test/XV6_Tests/task2_11.s"
+	@echo "... Project_Test/XV6_Tests/task2_12.o"
+	@echo "... Project_Test/XV6_Tests/task2_12.i"
+	@echo "... Project_Test/XV6_Tests/task2_12.s"
+	@echo "... Project_Test/XV6_Tests/task2_13.o"
+	@echo "... Project_Test/XV6_Tests/task2_13.i"
+	@echo "... Project_Test/XV6_Tests/task2_13.s"
+	@echo "... Project_Test/XV6_Tests/task2_14.o"
+	@echo "... Project_Test/XV6_Tests/task2_14.i"
+	@echo "... Project_Test/XV6_Tests/task2_14.s"
+	@echo "... Project_Test/XV6_Tests/task2_15.o"
+	@echo "... Project_Test/XV6_Tests/task2_15.i"
+	@echo "... Project_Test/XV6_Tests/task2_15.s"
+	@echo "... Project_Test/XV6_Tests/task2_16.o"
+	@echo "... Project_Test/XV6_Tests/task2_16.i"
+	@echo "... Project_Test/XV6_Tests/task2_16.s"
+	@echo "... Project_Test/XV6_Tests/task2_17.o"
+	@echo "... Project_Test/XV6_Tests/task2_17.i"
+	@echo "... Project_Test/XV6_Tests/task2_17.s"
+	@echo "... Project_Test/XV6_Tests/task2_18.o"
+	@echo "... Project_Test/XV6_Tests/task2_18.i"
+	@echo "... Project_Test/XV6_Tests/task2_18.s"
+	@echo "... Project_Test/XV6_Tests/task2_19.o"
+	@echo "... Project_Test/XV6_Tests/task2_19.i"
+	@echo "... Project_Test/XV6_Tests/task2_19.s"
+	@echo "... Project_Test/XV6_Tests/task2_2.o"
+	@echo "... Project_Test/XV6_Tests/task2_2.i"
+	@echo "... Project_Test/XV6_Tests/task2_2.s"
+	@echo "... Project_Test/XV6_Tests/task2_20.o"
+	@echo "... Project_Test/XV6_Tests/task2_20.i"
+	@echo "... Project_Test/XV6_Tests/task2_20.s"
+	@echo "... Project_Test/XV6_Tests/task2_21.o"
+	@echo "... Project_Test/XV6_Tests/task2_21.i"
+	@echo "... Project_Test/XV6_Tests/task2_21.s"
+	@echo "... Project_Test/XV6_Tests/task2_22.o"
+	@echo "... Project_Test/XV6_Tests/task2_22.i"
+	@echo "... Project_Test/XV6_Tests/task2_22.s"
+	@echo "... Project_Test/XV6_Tests/task2_23.o"
+	@echo "... Project_Test/XV6_Tests/task2_23.i"
+	@echo "... Project_Test/XV6_Tests/task2_23.s"
+	@echo "... Project_Test/XV6_Tests/task2_24.o"
+	@echo "... Project_Test/XV6_Tests/task2_24.i"
+	@echo "... Project_Test/XV6_Tests/task2_24.s"
+	@echo "... Project_Test/XV6_Tests/task2_25.o"
+	@echo "... Project_Test/XV6_Tests/task2_25.i"
+	@echo "... Project_Test/XV6_Tests/task2_25.s"
+	@echo "... Project_Test/XV6_Tests/task2_26.o"
+	@echo "... Project_Test/XV6_Tests/task2_26.i"
+	@echo "... Project_Test/XV6_Tests/task2_26.s"
+	@echo "... Project_Test/XV6_Tests/task2_27.o"
+	@echo "... Project_Test/XV6_Tests/task2_27.i"
+	@echo "... Project_Test/XV6_Tests/task2_27.s"
+	@echo "... Project_Test/XV6_Tests/task2_28.o"
+	@echo "... Project_Test/XV6_Tests/task2_28.i"
+	@echo "... Project_Test/XV6_Tests/task2_28.s"
+	@echo "... Project_Test/XV6_Tests/task2_29.o"
+	@echo "... Project_Test/XV6_Tests/task2_29.i"
+	@echo "... Project_Test/XV6_Tests/task2_29.s"
+	@echo "... Project_Test/XV6_Tests/task2_3.o"
+	@echo "... Project_Test/XV6_Tests/task2_3.i"
+	@echo "... Project_Test/XV6_Tests/task2_3.s"
+	@echo "... Project_Test/XV6_Tests/task2_4.o"
+	@echo "... Project_Test/XV6_Tests/task2_4.i"
+	@echo "... Project_Test/XV6_Tests/task2_4.s"
+	@echo "... Project_Test/XV6_Tests/task2_5.o"
+	@echo "... Project_Test/XV6_Tests/task2_5.i"
+	@echo "... Project_Test/XV6_Tests/task2_5.s"
+	@echo "... Project_Test/XV6_Tests/task2_6.o"
+	@echo "... Project_Test/XV6_Tests/task2_6.i"
+	@echo "... Project_Test/XV6_Tests/task2_6.s"
+	@echo "... Project_Test/XV6_Tests/task2_7.o"
+	@echo "... Project_Test/XV6_Tests/task2_7.i"
+	@echo "... Project_Test/XV6_Tests/task2_7.s"
+	@echo "... Project_Test/XV6_Tests/task2_8.o"
+	@echo "... Project_Test/XV6_Tests/task2_8.i"
+	@echo "... Project_Test/XV6_Tests/task2_8.s"
+	@echo "... Project_Test/XV6_Tests/task2_9.o"
+	@echo "... Project_Test/XV6_Tests/task2_9.i"
+	@echo "... Project_Test/XV6_Tests/task2_9.s"
+	@echo "... Project_Test/src/ProjectTest.o"
+	@echo "... Project_Test/src/ProjectTest.i"
+	@echo "... Project_Test/src/ProjectTest.s"
+	@echo "... Project_Test/src/SubTests.o"
+	@echo "... Project_Test/src/SubTests.i"
+	@echo "... Project_Test/src/SubTests.s"
+	@echo "... Project_Test/src/Tests.o"
+	@echo "... Project_Test/src/Tests.i"
+	@echo "... Project_Test/src/Tests.s"
 	@echo "... bio.o"
 	@echo "... bio.i"
 	@echo "... bio.s"

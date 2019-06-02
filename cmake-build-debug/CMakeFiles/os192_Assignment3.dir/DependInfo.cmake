@@ -1,9 +1,65 @@
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
   "C"
+  "CXX"
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/OforktestO.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/OforktestO.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/OusertestsO.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/OusertestsO.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/Ousertests_pagingO.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/Ousertests_pagingO.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/quitXV6.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/quitXV6.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_1.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_1.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_10.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_10.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_11.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_11.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_12.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_12.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_13.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_13.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_14.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_14.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_15.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_15.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_16.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_16.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_17.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_17.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_18.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_18.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_19.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_19.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_2.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_2.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_20.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_20.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_21.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_21.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_22.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_22.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_3.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_3.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_4.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_4.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_5.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_5.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_6.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_6.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_7.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_7.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_8.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_8.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task1_9.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task1_9.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_1.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_1.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_10.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_10.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_11.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_11.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_12.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_12.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_13.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_13.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_14.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_14.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_15.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_15.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_16.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_16.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_17.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_17.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_18.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_18.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_19.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_19.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_2.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_2.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_20.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_20.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_21.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_21.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_22.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_22.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_23.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_23.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_24.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_24.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_25.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_25.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_26.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_26.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_27.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_27.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_28.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_28.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_29.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_29.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_3.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_3.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_4.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_4.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_5.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_5.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_6.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_6.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_7.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_7.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_8.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_8.c.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/XV6_Tests/task2_9.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/XV6_Tests/task2_9.c.o"
   "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/bio.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/bio.c.o"
   "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/bootmain.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/bootmain.c.o"
   "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cat.c" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/cat.c.o"
@@ -57,6 +113,19 @@ set(CMAKE_C_COMPILER_ID "GNU")
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../."
+  "../Project_Test/include"
+  )
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/src/ProjectTest.cpp" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/src/ProjectTest.cpp.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/src/SubTests.cpp" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/src/SubTests.cpp.o"
+  "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/Project_Test/src/Tests.cpp" "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/os192_Assignment3.dir/Project_Test/src/Tests.cpp.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../."
+  "../Project_Test/include"
   )
 
 # Targets to which this target links.

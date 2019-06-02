@@ -77,10 +77,14 @@ trap(struct trapframe *tf) {
 
         case T_PGFLT:
             va = rcr2();
-            if ((get_flags(va) & PTE_PG)) {
-                (page_from_disk(va));
-                break;
+            if (myproc()->pid > 2) {
+                if ((tf->cs & 3) == 3 && get_flags(va) & PTE_PG) {
+                    if (page_from_disk(va)) {
+                        break;
+                    }
+                }
             }
+
             //PAGEBREAK: 13
         default:
             if (myproc() == 0 || (tf->cs & 3) == 0) {

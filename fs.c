@@ -783,6 +783,7 @@ readFromSwapFile(struct proc *p, char *buffer, uint placeOnFile, uint size) {
 
 int
 copyParentSwapFile(struct proc *np) {
+    cprintf("copyParentSwapFile...\n");
     if (myproc()->pid > 2) {
         char buff[PGSIZE];
         int swapArrSize = MAX_TOTAL_PAGES - MAX_PYSC_PAGES;
@@ -800,5 +801,44 @@ copyParentSwapFile(struct proc *np) {
     return -1;
 }
 
+
+int get_swap_idx() {
+    for (int i = 0; i < MAX_TOTAL_PAGES - MAX_PYSC_PAGES; ++i) {
+        if (myproc()->swap_monitor[i].used == 0) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+int write2file(int p_va, pde_t *pgdir) {
+    int swap_idx = get_swap_idx();
+    if(swap_idx<0) return -1;
+    struct proc *p = myproc();
+    int success = writeToSwapFile(p, (char*)p_va, PGSIZE * swap_idx, PGSIZE);
+    if (success < 0) return -1;
+
+    p->swap_monitor[swap_idx].pgdir = pgdir;
+    p->swap_monitor[swap_idx].p_va = p_va;
+    cprintf("write2file p_va = %d, idx = %d\n",p->swap_monitor[swap_idx].p_va, swap_idx);
+    p->swap_monitor[swap_idx].used = 1;
+    p->swap_monitor[swap_idx].place_in_queue = 0;
+
+    return success;
+}
+
+int read_page_from_disk(struct proc *p, int ram_idx, int p_va, char* buff) {
+    for (int i = 0; i < MAX_TOTAL_PAGES - MAX_PYSC_PAGES; i++) {
+        if (p->swap_monitor[i].p_va == p_va) {
+            if (readFromSwapFile(p, buff, i * PGSIZE, PGSIZE) < 0) break;
+            p->ram_monitor[ram_idx] = p->swap_monitor[i];
+            p->swap_monitor[i].used = 0;
+            p->last_in_queue++;
+            p->ram_monitor[ram_idx].place_in_queue = p->last_in_queue;
+            return 1;
+        }
+    }
+    return -1;
+}
 
 

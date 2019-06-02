@@ -201,3 +201,16 @@ make[1]: Leaving directory '/users/studs/bsc/2016/rosent/os192/os192-Assignment3
     Feature record: C_FEATURE:0c_restrict
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/users/studs/bsc/2016/rosent/os192/os192-Assignment3/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdCXX/a.out"
+
