@@ -127,16 +127,30 @@ pmalloc(void) {
 
 
 
-int protect_page(void *ap) {
+//int protect_page(void *ap) {
+//
+//    int flags = get_flags((uint) ap);
+//    if ( !(flags & PTE_1)) {
+//        return -1;
+//    }
+//    update_protected_pages(1);
+//    set_flag((uint) ap, PTE_W, 0);
+//    return 1;}
 
-    int flags = get_flags((uint) ap);
-    if ( !(flags & PTE_1)) {
+int
+protect_page(void* ap){
+    if((int)(ap-8) % PGSIZE != 0){
         return -1;
     }
-    update_protected_pages(1);
-    set_flag((uint) ap, PTE_W, 0);
-    return 1;}
+    int flags = get_flags((uint)ap);
+    if (flags & PTE_1) {
+        set_flag((uint) ap, PTE_W, 0);
+        update_protected_pages(1);
+        return 1;
 
+    }
+    return -1;
+}
 
 
 
