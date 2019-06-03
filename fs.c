@@ -820,7 +820,7 @@ int write2file(int p_va, pde_t *pgdir) {
 
     p->swap_monitor[swap_idx].pgdir = pgdir;
     p->swap_monitor[swap_idx].p_va = p_va;
-    cprintf("write2file p_va = %d, idx = %d\n",p->swap_monitor[swap_idx].p_va, swap_idx);
+//    cprintf("write2file p_va = %d, idx = %d\n",p->swap_monitor[swap_idx].p_va, swap_idx);
     p->swap_monitor[swap_idx].used = 1;
     p->swap_monitor[swap_idx].place_in_queue = 0;
 

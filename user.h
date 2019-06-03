@@ -50,6 +50,8 @@ int get_flags(uint);
 
 int set_flag(uint,int, int);
 
+void update_protected_pages(int);
+
 // ulib.c
 int stat(char *, struct stat *);
 

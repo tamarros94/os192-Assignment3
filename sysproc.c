@@ -114,3 +114,12 @@ int sys_get_flags(void){
 
     return get_flags(va);
 }
+
+int sys_update_protected_pages(void){
+    int up;
+    if(argint(0,&up) < 0 )
+        return -1;
+
+    update_protected_pages(up);
+    return 0;
+}

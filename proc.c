@@ -557,7 +557,7 @@ procdump(void) {
     struct proc *p;
     char *state;
     uint pc[10];
-    int total_pages;
+    int total_available_pages;
     int swap_pages;
 
     for (p = ptable.proc; p < &ptable.proc[NPROC]; p++) {
@@ -568,15 +568,16 @@ procdump(void) {
         else
             state = "???";
         cprintf("%d %s\n", p->pid, state);
-        total_pages = PGROUNDUP(p->sz)/PGSIZE;
+        total_available_pages = PGROUNDUP(p->sz)/PGSIZE;
         swap_pages = used_swap_pages(p);
         p->protected = 0;
-        cprintf("\ntotal_pages:%d swap_pages:%d protected:%d page_fault:%d pages_in_file:%d name:%s\n",total_pages, swap_pages, p->protected,p->page_fault_counter, p->pages_in_file,  p->name);
+        cprintf("\ntotal_pages:%d swap_pages:%d protected:%d page_fault:%d pages_in_file:%d name:%s\n",total_available_pages, swap_pages, p->protected,p->page_fault_counter, p->pages_in_file,  p->name);
         if (p->state == SLEEPING) {
             getcallerpcs((uint *) p->context->ebp + 2, pc);
             for (i = 0; i < 10 && pc[i] != 0; i++)
                 cprintf(" %p", pc[i]);
         }
+        cprintf("%d /%d \n", free_pages_in_system() , total_available_pages);
         cprintf("\n");
     }
 }

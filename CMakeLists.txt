@@ -105,7 +105,6 @@ add_executable(os192_Assignment3
         mmu.h
         mp.c
         mp.h
-        myMemTest.c
         param.h
         picirq.c
         pipe.c
@@ -136,4 +135,5 @@ add_executable(os192_Assignment3
         vm.c
         wc.c
         x86.h
-        zombie.c)
+        zombie.c
+        myMemTest.c)

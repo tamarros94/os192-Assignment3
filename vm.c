@@ -242,7 +242,7 @@ void add2ram(pde_t *pgdir, uint p_va) {
     myproc()->ram_monitor[idx].used = 1;
     myproc()->ram_monitor[idx].pgdir = pgdir;
     myproc()->ram_monitor[idx].p_va = p_va;
-    cprintf("add2ram: p_va = %d, idx = %d\n", myproc()->ram_monitor[idx].p_va, idx);
+//    cprintf("add2ram: p_va = %d, idx = %d\n", myproc()->ram_monitor[idx].p_va, idx);
     myproc()->last_in_queue++;
     myproc()->ram_monitor[idx].place_in_queue = myproc()->last_in_queue;
 }
@@ -308,7 +308,7 @@ int select_LIFO() {
 //}
 
 int select_SCFIFO() {
-    cprintf("SCFIFO\n");
+//    cprintf("SCFIFO\n");
     pte_t *pte;
     int i = 0;
     int pageIndex;
@@ -353,7 +353,7 @@ void swap(pde_t *pgdir, uint p_va) {
     struct proc *p = myproc();
     p->pages_in_file++;
     int ram_idx = replace_page_by_policy();
-    cprintf("Swapping index:: %d\n", ram_idx);
+//    cprintf("Swapping index:: %d\n", ram_idx);
     pte_t *pte = walkpgdir(p->ram_monitor[ram_idx].pgdir, (int *) p->ram_monitor[ram_idx].p_va, 0);
     int p_pa = PTE_ADDR(*pte);
     write2file(p->ram_monitor[ram_idx].p_va, p->ram_monitor[ram_idx].pgdir);
@@ -361,7 +361,7 @@ void swap(pde_t *pgdir, uint p_va) {
     p->ram_monitor[ram_idx].used = 0;
     set_flag2(p->ram_monitor[ram_idx].p_va, p->ram_monitor[ram_idx].pgdir, PTE_PG, 1);
     set_flag2(p->ram_monitor[ram_idx].p_va, p->ram_monitor[ram_idx].pgdir, PTE_P, 0);
-    cprintf("swap -> add2ram\n");
+//    cprintf("swap -> add2ram\n");
     add2ram(pgdir, p_va);
 }
 
@@ -429,10 +429,10 @@ int allocuvm(pde_t *pgdir, uint oldsz, uint newsz) {
         if (!select_NONE() && myproc()->pid > 2) {
 //            cprintf("PGROUNDUP(oldsz)/PGSIZE = %d\n", PGROUNDUP(oldsz)/PGSIZE);
             if (PGROUNDUP(oldsz) / PGSIZE + i > MAX_PYSC_PAGES) {
-                cprintf("alloc -> swap\n");
+//                cprintf("alloc -> swap\n");
                 swap(pgdir, a);
             } else {
-                cprintf("alloc -> add2ram\n");
+//                cprintf("alloc -> add2ram\n");
                 add2ram(pgdir, a);
             }
         }
@@ -627,7 +627,7 @@ int page_from_disk(int va) {
     }
     p->pages_in_file++;
     int ram_idx = replace_page_by_policy();
-    cprintf("page_from_disk: ram_idx = %d\n", ram_idx);
+//    cprintf("page_from_disk: ram_idx = %d\n", ram_idx);
     struct p_monitor page = p->ram_monitor[ram_idx];
     set_flag(p_va, PTE_PG, 0);
     set_flag(p_va, PTE_P | PTE_W | PTE_U, 1);
@@ -646,3 +646,8 @@ int page_from_disk(int va) {
     return 1;
 }
 
+void
+update_protected_pages(int up){
+    if(up) myproc()->protected++;
+    else myproc()->protected--;
+}

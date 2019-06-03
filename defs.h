@@ -76,6 +76,7 @@ char*           kalloc(void);
 void            kfree(char*);
 void            kinit1(void*, void*);
 void            kinit2(void*, void*);
+int             free_pages_in_system(void);
 
 // kbd.c
 void            kbdintr(void);
@@ -200,6 +201,7 @@ void            clearpteu(pde_t *pgdir, char *uva);
 int             get_flags(uint);
 int             set_flag(uint, int, int);
 int             page_from_disk(int);
+void            update_protected_pages(int);
 
 // number of elements in fixed-size array
 #define NELEM(x) (sizeof(x)/sizeof((x)[0]))
