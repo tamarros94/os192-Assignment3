@@ -1,6 +1,6 @@
 #include "types.h"
 #include "user.h"
-#define ALLOC_NUM 15
+#define ALLOC_NUM 10
 #define PGSIZE 4096
 #define EXRA_DATA 18
 #define STAY sleep(100);
@@ -35,7 +35,7 @@ int first_test(){
     int* m = malloc(4096);
 
     if(protect_page(m) == 0){
-        //printf(1,"c\n");
+        printf(1,"c\n");
         m_is_protected =1;
     }
 
@@ -50,7 +50,7 @@ int first_test(){
     int* p = pmalloc();
 
     if(protect_page(p) == -1){
-        // printf(1,"p fail to do protect page\n");
+         printf(1,"p fail to do protect page\n");
     }
     else{
         p_is_protected =1;
@@ -60,7 +60,7 @@ int first_test(){
 
     if(p_is_protected) {
         if (pfree(p) == -1) {
-            // printf(1, "p is protected but pfree failed\n");
+             printf(1, "p is protected but pfree failed\n");
             free(p);
         } else {
             protected_pg_num--;
@@ -80,6 +80,7 @@ int second_test(){
     printf(1,"malloc pages\n");
     for(i=0;i<ALLOC_NUM;i++){
         pages[i] =  malloc(PGSIZE);
+        printf(1,"after malloc %d\n", i);
         memset(pages[i], i, 1);
     }
     STAY

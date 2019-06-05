@@ -97,24 +97,6 @@ sys_uptime(void)
   return xticks;
 }
 
-
-int
-sys_set_flag(void){
-    int va, flag, on;
-    if(argint(0,&va) < 0 || argint(1,&flag) < 0 || argint(2,&on) < 0)
-        return -1;
-
-    return set_flag(va,flag,on);
-}
-
-int sys_get_flags(void){
-    int va;
-    if(argint(0,&va) < 0 )
-        return -1;
-
-    return get_flags(va);
-}
-
 int sys_update_protected_pages(void){
     int up;
     if(argint(0,&up) < 0 )
@@ -122,4 +104,21 @@ int sys_update_protected_pages(void){
 
     update_protected_pages(up);
     return 0;
+}
+
+int
+sys_is_flag_on(void){
+    int va, flag;
+    if(argint(0,&va) < 0 || argint(1,&flag) < 0)
+        return -1;
+    return is_flag_on((void *) va, flag);
+}
+int
+sys_turn_flag(void)
+{
+    int va, flag, on;
+    if(argint(0,&va) < 0 || argint(1,&flag) < 0 || argint(2,&on) < 0)
+        return -1;
+    turn_flag((void *) va, flag, on);
+    return 1;
 }

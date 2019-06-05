@@ -46,9 +46,9 @@ int uptime(void);
 
 int yield(void);
 
-int get_flags(uint);
+int is_flag_on(void *, uint);
 
-int set_flag(uint,int, int);
+int turn_flag(void *, uint, int);
 
 void update_protected_pages(int);
 

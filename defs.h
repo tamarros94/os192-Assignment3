@@ -198,8 +198,8 @@ void            switchuvm(struct proc*);
 void            switchkvm(void);
 int             copyout(pde_t*, uint, void*, uint);
 void            clearpteu(pde_t *pgdir, char *uva);
-int             get_flags(uint);
-int             set_flag(uint, int, int);
+int             is_flag_on(void*, uint);
+void            turn_flag(void*, uint, int);
 int             page_from_disk(int);
 void            update_protected_pages(int);
 

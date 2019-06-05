@@ -121,9 +121,9 @@ extern int sys_uptime(void);
 
 extern int sys_yield(void);
 
-extern int sys_get_flags(void);
+extern int sys_turn_flag(void);
 
-extern int sys_set_flag(void);
+extern int sys_is_flag_on(void);
 
 extern int sys_update_protected_pages(void);
 
@@ -150,10 +150,9 @@ static int (*syscalls[])(void) = {
         [SYS_mkdir]   sys_mkdir,
         [SYS_close]   sys_close,
         [SYS_yield]   sys_yield,
-        [SYS_set_flag] sys_set_flag,
-        [SYS_get_flags] sys_get_flags,
+        [SYS_turn_flag] sys_turn_flag,
+        [SYS_is_flag_on] sys_is_flag_on,
         [SYS_update_protected_pages] sys_update_protected_pages,
-
 };
 
 void

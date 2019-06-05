@@ -78,7 +78,7 @@ trap(struct trapframe *tf) {
         case T_PGFLT:
             va = rcr2();
             if (myproc()->pid > 2) {
-                if ((tf->cs & 3) == 3 && get_flags(va) & PTE_PG) {
+                if ((tf->cs & 3) == 3 && is_flag_on((void *) va, PTE_PG)) {
                     if (page_from_disk(va)) {
                         break;
                     }
@@ -87,7 +87,7 @@ trap(struct trapframe *tf) {
 
             //PAGEBREAK: 13
         default:
-            if(!(get_flags(rcr2()) & PTE_W)) tf->trapno = 13;
+            if(!(is_flag_on((void *) rcr2(), PTE_W))) tf->trapno = 13;
             if (myproc() == 0 || (tf->cs & 3) == 0) {
                 // In kernel, it must be our mistake.
                 cprintf("unexpected trap %d from cpu %d eip %x (cr2=0x%x)\n",

@@ -783,7 +783,6 @@ readFromSwapFile(struct proc *p, char *buffer, uint placeOnFile, uint size) {
 
 int
 copyParentSwapFile(struct proc *np) {
-    cprintf("copyParentSwapFile...\n");
     if (myproc()->pid > 2) {
         char buff[PGSIZE];
         int swapArrSize = MAX_TOTAL_PAGES - MAX_PYSC_PAGES;

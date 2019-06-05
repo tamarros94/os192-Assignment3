@@ -1,12 +1,12 @@
-cmake_minimum_required(VERSION 3.10)
-project(os192_Assignment3)
+cmake_minimum_required(VERSION 3.14)
+project(os192_Assignment3_master)
 
 set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
 include_directories(Project_Test/include)
 
-add_executable(os192_Assignment3
+add_executable(os192_Assignment3_master
         Project_Test/include/ProjectTest.h
         Project_Test/include/SubTests.h
         Project_Test/include/Tests.h
@@ -105,6 +105,7 @@ add_executable(os192_Assignment3
         mmu.h
         mp.c
         mp.h
+        myMemTest.c
         param.h
         picirq.c
         pipe.c
@@ -135,5 +136,4 @@ add_executable(os192_Assignment3
         vm.c
         wc.c
         x86.h
-        zombie.c
-        myMemTest.c)
+        zombie.c)

@@ -21,6 +21,6 @@
 #define SYS_mkdir  20
 #define SYS_close  21
 #define SYS_yield  22
-#define SYS_get_flags 23
-#define SYS_set_flag 24
+#define SYS_turn_flag 23
+#define SYS_is_flag_on 24
 #define SYS_update_protected_pages 25
