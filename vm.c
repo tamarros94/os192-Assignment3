@@ -117,6 +117,7 @@ void page_in(int u_va, int va, pde_t *pgdir) {
     if (!pte)
         panic("page pte is not found");
     *pte |= PTE_P | PTE_W | PTE_U;
+    p->protected--;
     *pte &= ~PTE_PG;
     *pte |= va;
     lcr3(V2P(p->pgdir));
@@ -131,6 +132,7 @@ void page_out(uint va, pde_t *pgdir) {
     *pte |= PTE_PG;
     *pte &= ~PTE_P;
     *pte &= PTE_FLAGS(*pte);
+    p->protected++;
     lcr3(V2P(p->pgdir));
 }
 
@@ -230,26 +232,6 @@ loaduvm(pde_t *pgdir, char *addr, struct inode *ip, uint offset, uint sz) {
     }
     return 0;
 }
-//
-//int
-//set_flag2(uint va, pde_t *pgdir, int flag, int on) {
-//    pte_t *pte = walkpgdir(pgdir, (void *) va, 0);
-//    if (!pte) return -1;
-//
-//    // turn flag bit off
-//    if (!on) {
-//        *pte = *pte & (~flag);
-//    }
-//        // turn flag bit on
-//    else {
-//        *pte = *pte | flag;
-//    }
-//
-//    lcr3(V2P(pgdir));
-//
-//    return 0;
-//}
-
 
 
 void
@@ -375,10 +357,11 @@ allocuvm(pde_t *pgdir, uint oldsz, uint newsz) {
         return 0;
     if (newsz < oldsz)
         return oldsz;
-
+    int i = 0;
     a = PGROUNDUP(oldsz);
     for (; a < newsz; a += PGSIZE) {
         mem = kalloc();
+        i++;
         if (mem == 0) {
             cprintf("allocuvm out of memory\n");
             deallocuvm(pgdir, newsz, oldsz);
@@ -387,7 +370,7 @@ allocuvm(pde_t *pgdir, uint oldsz, uint newsz) {
         memset(mem, 0, PGSIZE);
         mappages(pgdir, (char *) a, PGSIZE, V2P(mem), PTE_W | PTE_U);
         if (myproc()->pid > 2 && !select_NONE()) {
-            if ((PGROUNDUP(oldsz)) / PGSIZE <= MAX_PYSC_PAGES)
+            if ((PGROUNDUP(oldsz)) / PGSIZE + i <= MAX_PYSC_PAGES)
                 add2ram(pgdir, a);
 
             else swap(pgdir, a);

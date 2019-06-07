@@ -571,7 +571,7 @@ procdump(void) {
         total_available_pages = PGROUNDUP(p->sz)/PGSIZE;
         swap_pages = used_swap_pages(p);
         p->protected = 0;
-        cprintf("\ntotal_pages:%d swap_pages:%d protected:%d page_fault:%d pages_in_file:%d name:%s\n",total_available_pages, swap_pages, p->protected,p->page_fault_counter, p->pages_in_file,  p->name);
+        cprintf("\n%d %d %d %d %d %s\n",total_available_pages, swap_pages, p->protected,p->page_fault_counter, p->pages_in_file,  p->name);
         if (p->state == SLEEPING) {
             getcallerpcs((uint *) p->context->ebp + 2, pc);
             for (i = 0; i < 10 && pc[i] != 0; i++)
